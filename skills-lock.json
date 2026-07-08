@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "flutter-adaptive-design-system": {
+      "source": "Prodevking1/flutter-adaptive-design-system",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "178c7a3f9763a5ff62002d3c2dbdd035993c90c66c49b751a709481cb847e316"
+    }
+  }
+}
