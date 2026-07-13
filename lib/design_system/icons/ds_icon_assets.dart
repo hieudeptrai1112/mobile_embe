@@ -9,18 +9,18 @@ abstract final class DsIconAssets {
   // ── Actions ─────────────────────────────────────────────────
   static const aboldError = '$_base/actions/ABold_Error.webp';
   static const aboldInfo = '$_base/actions/ABold_Info.webp';
-  static const alinearAdd4x = '$_base/actions/ALinear_Add_4x.webp';
+  static const alinearAdd4x = '$_base/actions/ALinear_Add.webp';
   static const alinearBottom = '$_base/actions/ALinear_Bottom.webp';
   static const alinearCalendar = '$_base/actions/ALinear_Calendar.webp';
   static const alinearCancel = '$_base/actions/ALinear_Cancel.webp';
-  static const alinearDownload4x = '$_base/actions/ALinear_Download_4x.webp';
+  static const alinearDownload4x = '$_base/actions/ALinear_Download.webp';
   static const alinearHide = '$_base/actions/ALinear_Hide.webp';
   static const alinearLeft = '$_base/actions/ALinear_Left.webp';
   static const alinearLoading = '$_base/actions/ALinear_Loading.webp';
   static const alinearRight = '$_base/actions/ALinear_Right.webp';
-  static const alinearSearch4x = '$_base/actions/ALinear_Search_4x.webp';
+  static const alinearSearch4x = '$_base/actions/ALinear_Search.webp';
   static const alinearUp = '$_base/actions/ALinear_Up.webp';
-  static const alinearUpload4x = '$_base/actions/ALinear_Upload_4x.webp';
+  static const alinearUpload4x = '$_base/actions/ALinear_Upload.webp';
   static const alinearVisible = '$_base/actions/ALinear_Visible.webp';
   static const add = '$_base/actions/add.svg';
   static const check = '$_base/actions/check.svg';
