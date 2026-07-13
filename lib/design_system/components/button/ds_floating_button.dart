@@ -10,7 +10,7 @@ enum DsFloatingButtonShape { square, round }
 
 /// Floating icon button from Figma `MButtonIcon` (square) and `MButtonFloatAction` (round).
 ///
-/// Renders [DsIconName.alinearAdd4x] (Figma `A Linear/Add`) — 24px square, 32px round.
+/// Renders [DsIconName.alinearAdd] (Figma `A Linear/Add`) — 24px square, 32px round.
 class DsFloatingButton extends StatefulWidget {
   const DsFloatingButton({
     super.key,
@@ -85,7 +85,7 @@ class _DsFloatingButtonState extends State<DsFloatingButton> {
                   ),
           ),
           child: DsIcon(
-            name: DsIconName.alinearAdd4x,
+            name: DsIconName.alinearAdd,
             size: metrics.iconSize,
             color: palette.foreground,
           ),

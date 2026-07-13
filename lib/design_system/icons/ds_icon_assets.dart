@@ -7,21 +7,30 @@ abstract final class DsIconAssets {
   static const _base = 'assets/icons';
 
   // ── Actions ─────────────────────────────────────────────────
+  static const aboldCards = '$_base/actions/ABold_Cards.webp';
   static const aboldError = '$_base/actions/ABold_Error.webp';
+  static const aboldHome = '$_base/actions/ABold_Home.webp';
   static const aboldInfo = '$_base/actions/ABold_Info.webp';
-  static const alinearAdd4x = '$_base/actions/ALinear_Add.webp';
+  static const aboldMore = '$_base/actions/ABold_More.webp';
+  static const aboldWallet = '$_base/actions/ABold_Wallet.webp';
+  static const alinearAdd = '$_base/actions/ALinear_Add.webp';
   static const alinearBottom = '$_base/actions/ALinear_Bottom.webp';
   static const alinearCalendar = '$_base/actions/ALinear_Calendar.webp';
   static const alinearCancel = '$_base/actions/ALinear_Cancel.webp';
-  static const alinearDownload4x = '$_base/actions/ALinear_Download.webp';
+  static const alinearCards = '$_base/actions/ALinear_Cards.webp';
+  static const alinearDownload = '$_base/actions/ALinear_Download.webp';
   static const alinearHide = '$_base/actions/ALinear_Hide.webp';
+  static const alinearHome = '$_base/actions/ALinear_Home.webp';
   static const alinearLeft = '$_base/actions/ALinear_Left.webp';
   static const alinearLoading = '$_base/actions/ALinear_Loading.webp';
+  static const alinearMission = '$_base/actions/ALinear_Mission.webp';
+  static const alinearMore = '$_base/actions/ALinear_More.webp';
   static const alinearRight = '$_base/actions/ALinear_Right.webp';
-  static const alinearSearch4x = '$_base/actions/ALinear_Search.webp';
+  static const alinearSearch = '$_base/actions/ALinear_Search.webp';
   static const alinearUp = '$_base/actions/ALinear_Up.webp';
-  static const alinearUpload4x = '$_base/actions/ALinear_Upload.webp';
+  static const alinearUpload = '$_base/actions/ALinear_Upload.webp';
   static const alinearVisible = '$_base/actions/ALinear_Visible.webp';
+  static const alinearWallet = '$_base/actions/ALinear_Wallet.webp';
   static const add = '$_base/actions/add.svg';
   static const check = '$_base/actions/check.svg';
   static const close = '$_base/actions/close.svg';
@@ -73,21 +82,30 @@ abstract final class DsIconAssets {
 
 enum DsIconName {
   // Actions
+  aboldCards,
   aboldError,
+  aboldHome,
   aboldInfo,
-  alinearAdd4x,
+  aboldMore,
+  aboldWallet,
+  alinearAdd,
   alinearBottom,
   alinearCalendar,
   alinearCancel,
-  alinearDownload4x,
+  alinearCards,
+  alinearDownload,
   alinearHide,
+  alinearHome,
   alinearLeft,
   alinearLoading,
+  alinearMission,
+  alinearMore,
   alinearRight,
-  alinearSearch4x,
+  alinearSearch,
   alinearUp,
-  alinearUpload4x,
+  alinearUpload,
   alinearVisible,
+  alinearWallet,
   add,
   check,
   close,
@@ -146,21 +164,30 @@ const kDsIconGroupOrder = [
 
 extension DsIconNameX on DsIconName {
   String get assetPath => switch (this) {
+        DsIconName.aboldCards => DsIconAssets.aboldCards,
         DsIconName.aboldError => DsIconAssets.aboldError,
+        DsIconName.aboldHome => DsIconAssets.aboldHome,
         DsIconName.aboldInfo => DsIconAssets.aboldInfo,
-        DsIconName.alinearAdd4x => DsIconAssets.alinearAdd4x,
+        DsIconName.aboldMore => DsIconAssets.aboldMore,
+        DsIconName.aboldWallet => DsIconAssets.aboldWallet,
+        DsIconName.alinearAdd => DsIconAssets.alinearAdd,
         DsIconName.alinearBottom => DsIconAssets.alinearBottom,
         DsIconName.alinearCalendar => DsIconAssets.alinearCalendar,
         DsIconName.alinearCancel => DsIconAssets.alinearCancel,
-        DsIconName.alinearDownload4x => DsIconAssets.alinearDownload4x,
+        DsIconName.alinearCards => DsIconAssets.alinearCards,
+        DsIconName.alinearDownload => DsIconAssets.alinearDownload,
         DsIconName.alinearHide => DsIconAssets.alinearHide,
+        DsIconName.alinearHome => DsIconAssets.alinearHome,
         DsIconName.alinearLeft => DsIconAssets.alinearLeft,
         DsIconName.alinearLoading => DsIconAssets.alinearLoading,
+        DsIconName.alinearMission => DsIconAssets.alinearMission,
+        DsIconName.alinearMore => DsIconAssets.alinearMore,
         DsIconName.alinearRight => DsIconAssets.alinearRight,
-        DsIconName.alinearSearch4x => DsIconAssets.alinearSearch4x,
+        DsIconName.alinearSearch => DsIconAssets.alinearSearch,
         DsIconName.alinearUp => DsIconAssets.alinearUp,
-        DsIconName.alinearUpload4x => DsIconAssets.alinearUpload4x,
+        DsIconName.alinearUpload => DsIconAssets.alinearUpload,
         DsIconName.alinearVisible => DsIconAssets.alinearVisible,
+        DsIconName.alinearWallet => DsIconAssets.alinearWallet,
         DsIconName.add => DsIconAssets.add,
         DsIconName.check => DsIconAssets.check,
         DsIconName.close => DsIconAssets.close,
@@ -204,21 +231,30 @@ extension DsIconNameX on DsIconName {
       };
 
   String get label => switch (this) {
+        DsIconName.aboldCards => 'Abold Cards',
         DsIconName.aboldError => 'Abold Error',
+        DsIconName.aboldHome => 'Abold Home',
         DsIconName.aboldInfo => 'Abold Info',
-        DsIconName.alinearAdd4x => 'Alinear Add 4x',
+        DsIconName.aboldMore => 'Abold More',
+        DsIconName.aboldWallet => 'Abold Wallet',
+        DsIconName.alinearAdd => 'Alinear Add',
         DsIconName.alinearBottom => 'Alinear Bottom',
         DsIconName.alinearCalendar => 'Alinear Calendar',
         DsIconName.alinearCancel => 'Alinear Cancel',
-        DsIconName.alinearDownload4x => 'Alinear Download 4x',
+        DsIconName.alinearCards => 'Alinear Cards',
+        DsIconName.alinearDownload => 'Alinear Download',
         DsIconName.alinearHide => 'Alinear Hide',
+        DsIconName.alinearHome => 'Alinear Home',
         DsIconName.alinearLeft => 'Alinear Left',
         DsIconName.alinearLoading => 'Alinear Loading',
+        DsIconName.alinearMission => 'Alinear Mission',
+        DsIconName.alinearMore => 'Alinear More',
         DsIconName.alinearRight => 'Alinear Right',
-        DsIconName.alinearSearch4x => 'Alinear Search 4x',
+        DsIconName.alinearSearch => 'Alinear Search',
         DsIconName.alinearUp => 'Alinear Up',
-        DsIconName.alinearUpload4x => 'Alinear Upload 4x',
+        DsIconName.alinearUpload => 'Alinear Upload',
         DsIconName.alinearVisible => 'Alinear Visible',
+        DsIconName.alinearWallet => 'Alinear Wallet',
         DsIconName.add => 'Add',
         DsIconName.check => 'Check',
         DsIconName.close => 'Close',

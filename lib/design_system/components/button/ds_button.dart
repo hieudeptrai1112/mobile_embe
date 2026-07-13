@@ -29,10 +29,10 @@ class DsButton extends StatefulWidget {
   final DsButtonType type;
   final DsButtonSize size;
 
-  /// Shows [DsIconName.alinearAdd4x] on the left (Figma `A Linear/Add`).
+  /// Shows [DsIconName.alinearAdd] on the left (Figma `A Linear/Add`).
   final bool showLeadingIcon;
 
-  /// Shows [DsIconName.alinearAdd4x] on the right (Figma `A Linear/Add`).
+  /// Shows [DsIconName.alinearAdd] on the right (Figma `A Linear/Add`).
   final bool showTrailingIcon;
 
   final bool isLoading;
@@ -120,7 +120,7 @@ class _DsButtonState extends State<DsButton> {
                 SizedBox(width: AppSpacing.xs),
               ] else if (widget.showLeadingIcon) ...[
                 DsIcon(
-                  name: DsIconName.alinearAdd4x,
+                  name: DsIconName.alinearAdd,
                   size: metrics.iconSize,
                   color: palette.foreground,
                 ),
@@ -141,7 +141,7 @@ class _DsButtonState extends State<DsButton> {
               if (widget.showTrailingIcon) ...[
                 SizedBox(width: AppSpacing.xs),
                 DsIcon(
-                  name: DsIconName.alinearAdd4x,
+                  name: DsIconName.alinearAdd,
                   size: metrics.iconSize,
                   color: palette.foreground,
                 ),

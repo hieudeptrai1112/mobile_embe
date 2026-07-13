@@ -681,7 +681,7 @@ class _InputHeader extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(AppSpacing.xs),
                 child: DsIcon(
-                  name: DsIconName.alinearUpload4x,
+                  name: DsIconName.alinearUpload,
                   size: AppIconSize.m,
                   color: enabled
                       ? colors.textBrandPrimary1
@@ -795,7 +795,7 @@ class _FileItem extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(AppSpacing.xs),
               child: DsIcon(
-                name: DsIconName.alinearDownload4x,
+                name: DsIconName.alinearDownload,
                 size: AppIconSize.m,
                 color: colors.textBrandPrimary1,
               ),

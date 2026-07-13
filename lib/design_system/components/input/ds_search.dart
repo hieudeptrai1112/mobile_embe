@@ -107,7 +107,7 @@ class _DsSearchState extends State<DsSearch> {
       child: Row(
         children: [
           DsIcon(
-            name: DsIconName.alinearSearch4x,
+            name: DsIconName.alinearSearch,
             size: AppIconSize.m,
             color: palette.icon,
           ),

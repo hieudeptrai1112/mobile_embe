@@ -24,10 +24,10 @@ class DsButtonGhost extends StatefulWidget {
   final VoidCallback? onPressed;
   final DsButtonSize size;
 
-  /// Shows [DsIconName.alinearAdd4x] on the left (Figma `A Linear/Add`).
+  /// Shows [DsIconName.alinearAdd] on the left (Figma `A Linear/Add`).
   final bool showLeadingIcon;
 
-  /// Shows [DsIconName.alinearAdd4x] on the right (Figma `A Linear/Add`).
+  /// Shows [DsIconName.alinearAdd] on the right (Figma `A Linear/Add`).
   final bool showTrailingIcon;
 
   @override
@@ -74,7 +74,7 @@ class _DsButtonGhostState extends State<DsButtonGhost> {
             children: [
               if (widget.showLeadingIcon)
                 DsIcon(
-                  name: DsIconName.alinearAdd4x,
+                  name: DsIconName.alinearAdd,
                   size: metrics.iconSize,
                   color: foreground,
                 ),
@@ -92,7 +92,7 @@ class _DsButtonGhostState extends State<DsButtonGhost> {
               ),
               if (widget.showTrailingIcon)
                 DsIcon(
-                  name: DsIconName.alinearAdd4x,
+                  name: DsIconName.alinearAdd,
                   size: metrics.iconSize,
                   color: foreground,
                 ),
