@@ -29,4 +29,5 @@ export 'components/overlay/ds_date_picker.dart';
 export 'components/overlay/ds_modal.dart';
 export 'components/badge/ds_badge.dart';
 export 'components/announcement/ds_announcement_bar.dart';
+export 'components/navigation/ds_tab_bar.dart';
 export 'components/status/ds_status.dart';

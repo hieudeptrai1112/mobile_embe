@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../badge_showcase_page.dart';
 import '../announcement_bar_showcase_page.dart';
 import '../modal_showcase_page.dart';
+import '../tab_bar_showcase_page.dart';
 import '../bottom_sheet_showcase_page.dart';
 import '../button_ghost_showcase_page.dart';
 import '../button_group_showcase_page.dart';
@@ -85,6 +86,12 @@ abstract final class ShowcaseCatalog {
           title: 'Announcement Bar',
           figmaName: 'M Announcement Bar/ Top',
           builder: _buildAnnouncementBar,
+        ),
+        ShowcaseCatalogItem(
+          id: 'tab-bar',
+          title: 'Tab Bar',
+          figmaName: 'O Tab Bar/ Maker',
+          builder: _buildTabBar,
         ),
       ],
     ),
@@ -254,6 +261,7 @@ abstract final class ShowcaseCatalog {
   static Widget _buildBadge(BuildContext _) => const BadgeShowcasePage();
   static Widget _buildAnnouncementBar(BuildContext _) =>
       const AnnouncementBarShowcasePage();
+  static Widget _buildTabBar(BuildContext _) => const TabBarShowcasePage();
   static Widget _buildPrimitiveColors(BuildContext _) =>
       const PrimitiveColorsShowcasePage();
   static Widget _buildSemanticColors(BuildContext _) =>

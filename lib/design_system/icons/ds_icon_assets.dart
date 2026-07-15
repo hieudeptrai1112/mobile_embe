@@ -7,13 +7,16 @@ abstract final class DsIconAssets {
   static const _base = 'assets/icons';
 
   // ── Actions ─────────────────────────────────────────────────
+  static const aboldBank = '$_base/actions/ABold_Bank.png';
   static const aboldCards = '$_base/actions/ABold_Cards.webp';
   static const aboldError = '$_base/actions/ABold_Error.webp';
   static const aboldHome = '$_base/actions/ABold_Home.webp';
   static const aboldInfo = '$_base/actions/ABold_Info.webp';
   static const aboldMore = '$_base/actions/ABold_More.webp';
+  static const aboldPayment = '$_base/actions/ABold_Payment.webp';
   static const aboldWallet = '$_base/actions/ABold_Wallet.webp';
   static const alinearAdd = '$_base/actions/ALinear_Add.webp';
+  static const alinearBanking = '$_base/actions/ALinear_Banking.png';
   static const alinearBottom = '$_base/actions/ALinear_Bottom.webp';
   static const alinearCalendar = '$_base/actions/ALinear_Calendar.webp';
   static const alinearCancel = '$_base/actions/ALinear_Cancel.webp';
@@ -25,6 +28,7 @@ abstract final class DsIconAssets {
   static const alinearLoading = '$_base/actions/ALinear_Loading.webp';
   static const alinearMission = '$_base/actions/ALinear_Mission.webp';
   static const alinearMore = '$_base/actions/ALinear_More.webp';
+  static const alinearPayment = '$_base/actions/ALinear_Payment.webp';
   static const alinearRight = '$_base/actions/ALinear_Right.webp';
   static const alinearSearch = '$_base/actions/ALinear_Search.webp';
   static const alinearUp = '$_base/actions/ALinear_Up.webp';
@@ -82,13 +86,16 @@ abstract final class DsIconAssets {
 
 enum DsIconName {
   // Actions
+  aboldBank,
   aboldCards,
   aboldError,
   aboldHome,
   aboldInfo,
   aboldMore,
+  aboldPayment,
   aboldWallet,
   alinearAdd,
+  alinearBanking,
   alinearBottom,
   alinearCalendar,
   alinearCancel,
@@ -100,6 +107,7 @@ enum DsIconName {
   alinearLoading,
   alinearMission,
   alinearMore,
+  alinearPayment,
   alinearRight,
   alinearSearch,
   alinearUp,
@@ -164,13 +172,16 @@ const kDsIconGroupOrder = [
 
 extension DsIconNameX on DsIconName {
   String get assetPath => switch (this) {
+        DsIconName.aboldBank => DsIconAssets.aboldBank,
         DsIconName.aboldCards => DsIconAssets.aboldCards,
         DsIconName.aboldError => DsIconAssets.aboldError,
         DsIconName.aboldHome => DsIconAssets.aboldHome,
         DsIconName.aboldInfo => DsIconAssets.aboldInfo,
         DsIconName.aboldMore => DsIconAssets.aboldMore,
+        DsIconName.aboldPayment => DsIconAssets.aboldPayment,
         DsIconName.aboldWallet => DsIconAssets.aboldWallet,
         DsIconName.alinearAdd => DsIconAssets.alinearAdd,
+        DsIconName.alinearBanking => DsIconAssets.alinearBanking,
         DsIconName.alinearBottom => DsIconAssets.alinearBottom,
         DsIconName.alinearCalendar => DsIconAssets.alinearCalendar,
         DsIconName.alinearCancel => DsIconAssets.alinearCancel,
@@ -182,6 +193,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearLoading => DsIconAssets.alinearLoading,
         DsIconName.alinearMission => DsIconAssets.alinearMission,
         DsIconName.alinearMore => DsIconAssets.alinearMore,
+        DsIconName.alinearPayment => DsIconAssets.alinearPayment,
         DsIconName.alinearRight => DsIconAssets.alinearRight,
         DsIconName.alinearSearch => DsIconAssets.alinearSearch,
         DsIconName.alinearUp => DsIconAssets.alinearUp,
@@ -231,13 +243,16 @@ extension DsIconNameX on DsIconName {
       };
 
   String get label => switch (this) {
+        DsIconName.aboldBank => 'Abold Bank',
         DsIconName.aboldCards => 'Abold Cards',
         DsIconName.aboldError => 'Abold Error',
         DsIconName.aboldHome => 'Abold Home',
         DsIconName.aboldInfo => 'Abold Info',
         DsIconName.aboldMore => 'Abold More',
+        DsIconName.aboldPayment => 'Abold Payment',
         DsIconName.aboldWallet => 'Abold Wallet',
         DsIconName.alinearAdd => 'Alinear Add',
+        DsIconName.alinearBanking => 'Alinear Banking',
         DsIconName.alinearBottom => 'Alinear Bottom',
         DsIconName.alinearCalendar => 'Alinear Calendar',
         DsIconName.alinearCancel => 'Alinear Cancel',
@@ -249,6 +264,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearLoading => 'Alinear Loading',
         DsIconName.alinearMission => 'Alinear Mission',
         DsIconName.alinearMore => 'Alinear More',
+        DsIconName.alinearPayment => 'Alinear Payment',
         DsIconName.alinearRight => 'Alinear Right',
         DsIconName.alinearSearch => 'Alinear Search',
         DsIconName.alinearUp => 'Alinear Up',
