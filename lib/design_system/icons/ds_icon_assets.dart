@@ -19,6 +19,7 @@ abstract final class DsIconAssets {
   static const alinearAdd = '$_base/actions/ALinear_Add.webp';
   static const alinearAddCard = '$_base/actions/ALinear_Add_Card.webp';
   static const alinearAddPaper = '$_base/actions/ALinear_Add_Paper.webp';
+  static const alinearAttachments = '$_base/actions/ALinear_Attachments.webp';
   static const alinearAutoBill = '$_base/actions/ALinear_Auto_Bill.webp';
   static const alinearBiometric = '$_base/actions/ALinear_Biometric.webp';
   static const alinearBoardPercentage = '$_base/actions/ALinear_Board_Percentage.webp';
@@ -50,6 +51,7 @@ abstract final class DsIconAssets {
   static const alinearElectricity = '$_base/actions/ALinear_Electricity.webp';
   static const alinearEmail = '$_base/actions/ALinear_Email.webp';
   static const alinearExchange = '$_base/actions/ALinear_Exchange.webp';
+  static const alinearFilter = '$_base/actions/ALinear_Filter.webp';
   static const alinearFormManagement = '$_base/actions/ALinear_Form_Management.webp';
   static const alinearHandMoney = '$_base/actions/ALinear_Hand_Money.webp';
   static const alinearHide = '$_base/actions/ALinear_Hide.webp';
@@ -61,8 +63,8 @@ abstract final class DsIconAssets {
   static const alinearLoading = '$_base/actions/ALinear_Loading.webp';
   static const alinearLoans = '$_base/actions/ALinear_Loans.webp';
   static const alinearLock = '$_base/actions/ALinear_Lock.webp';
-  static const alinearMenu1 = '$_base/actions/ALinear_Menu 1.webp';
-  static const alinearMenu2 = '$_base/actions/ALinear_Menu 2.webp';
+  static const alinearMenu1 = '$_base/actions/ALinear_Menu1.webp';
+  static const alinearMenu2 = '$_base/actions/ALinear_Menu2.webp';
   static const alinearMission = '$_base/actions/ALinear_Mission.webp';
   static const alinearMobileTime = '$_base/actions/ALinear_Mobile_Time.webp';
   static const alinearMoney = '$_base/actions/ALinear_Money.webp';
@@ -91,7 +93,7 @@ abstract final class DsIconAssets {
   static const alinearSend = '$_base/actions/ALinear_Send.webp';
   static const alinearShield = '$_base/actions/ALinear_Shield.webp';
   static const alinearStatus = '$_base/actions/ALinear_Status.webp';
-  static const alinearSubmitFeedback = '$_base/actions/ALinear_Submit Feedback.webp';
+  static const alinearSubmitFeedback = '$_base/actions/ALinear_Submit_Feedback.webp';
   static const alinearTv = '$_base/actions/ALinear_TV.webp';
   static const alinearTopUp = '$_base/actions/ALinear_Top_Up.webp';
   static const alinearTransfer = '$_base/actions/ALinear_Transfer.webp';
@@ -105,20 +107,6 @@ abstract final class DsIconAssets {
   static const alinearWater = '$_base/actions/ALinear_Water.webp';
   static const alinearWifi = '$_base/actions/ALinear_Wifi.webp';
   static const alinearWithdrawal = '$_base/actions/ALinear_Withdrawal.webp';
-  static const add = '$_base/actions/add.svg';
-  static const check = '$_base/actions/check.svg';
-  static const close = '$_base/actions/close.svg';
-  static const copy = '$_base/actions/copy.svg';
-  static const delete = '$_base/actions/delete.svg';
-  static const download = '$_base/actions/download.svg';
-  static const edit = '$_base/actions/edit.svg';
-  static const filter = '$_base/actions/filter.svg';
-  static const more = '$_base/actions/more.svg';
-  static const refresh = '$_base/actions/refresh.svg';
-  static const search = '$_base/actions/search.svg';
-  static const share = '$_base/actions/share.svg';
-  static const sort = '$_base/actions/sort.svg';
-  static const upload = '$_base/actions/upload.svg';
 
   // ── Navigation ──────────────────────────────────────────────
   static const arrowDown = '$_base/navigation/arrow_down.svg';
@@ -168,6 +156,7 @@ enum DsIconName {
   alinearAdd,
   alinearAddCard,
   alinearAddPaper,
+  alinearAttachments,
   alinearAutoBill,
   alinearBiometric,
   alinearBoardPercentage,
@@ -199,6 +188,7 @@ enum DsIconName {
   alinearElectricity,
   alinearEmail,
   alinearExchange,
+  alinearFilter,
   alinearFormManagement,
   alinearHandMoney,
   alinearHide,
@@ -254,20 +244,6 @@ enum DsIconName {
   alinearWater,
   alinearWifi,
   alinearWithdrawal,
-  add,
-  check,
-  close,
-  copy,
-  delete,
-  download,
-  edit,
-  filter,
-  more,
-  refresh,
-  search,
-  share,
-  sort,
-  upload,
 
   // Navigation
   arrowDown,
@@ -324,6 +300,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearAdd => DsIconAssets.alinearAdd,
         DsIconName.alinearAddCard => DsIconAssets.alinearAddCard,
         DsIconName.alinearAddPaper => DsIconAssets.alinearAddPaper,
+        DsIconName.alinearAttachments => DsIconAssets.alinearAttachments,
         DsIconName.alinearAutoBill => DsIconAssets.alinearAutoBill,
         DsIconName.alinearBiometric => DsIconAssets.alinearBiometric,
         DsIconName.alinearBoardPercentage => DsIconAssets.alinearBoardPercentage,
@@ -355,6 +332,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearElectricity => DsIconAssets.alinearElectricity,
         DsIconName.alinearEmail => DsIconAssets.alinearEmail,
         DsIconName.alinearExchange => DsIconAssets.alinearExchange,
+        DsIconName.alinearFilter => DsIconAssets.alinearFilter,
         DsIconName.alinearFormManagement => DsIconAssets.alinearFormManagement,
         DsIconName.alinearHandMoney => DsIconAssets.alinearHandMoney,
         DsIconName.alinearHide => DsIconAssets.alinearHide,
@@ -410,20 +388,6 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearWater => DsIconAssets.alinearWater,
         DsIconName.alinearWifi => DsIconAssets.alinearWifi,
         DsIconName.alinearWithdrawal => DsIconAssets.alinearWithdrawal,
-        DsIconName.add => DsIconAssets.add,
-        DsIconName.check => DsIconAssets.check,
-        DsIconName.close => DsIconAssets.close,
-        DsIconName.copy => DsIconAssets.copy,
-        DsIconName.delete => DsIconAssets.delete,
-        DsIconName.download => DsIconAssets.download,
-        DsIconName.edit => DsIconAssets.edit,
-        DsIconName.filter => DsIconAssets.filter,
-        DsIconName.more => DsIconAssets.more,
-        DsIconName.refresh => DsIconAssets.refresh,
-        DsIconName.search => DsIconAssets.search,
-        DsIconName.share => DsIconAssets.share,
-        DsIconName.sort => DsIconAssets.sort,
-        DsIconName.upload => DsIconAssets.upload,
         DsIconName.arrowDown => DsIconAssets.arrowDown,
         DsIconName.arrowLeft => DsIconAssets.arrowLeft,
         DsIconName.arrowRight => DsIconAssets.arrowRight,
@@ -465,6 +429,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearAdd => 'Alinear Add',
         DsIconName.alinearAddCard => 'Alinear Add Card',
         DsIconName.alinearAddPaper => 'Alinear Add Paper',
+        DsIconName.alinearAttachments => 'Alinear Attachments',
         DsIconName.alinearAutoBill => 'Alinear Auto Bill',
         DsIconName.alinearBiometric => 'Alinear Biometric',
         DsIconName.alinearBoardPercentage => 'Alinear Board Percentage',
@@ -496,6 +461,7 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearElectricity => 'Alinear Electricity',
         DsIconName.alinearEmail => 'Alinear Email',
         DsIconName.alinearExchange => 'Alinear Exchange',
+        DsIconName.alinearFilter => 'Alinear Filter',
         DsIconName.alinearFormManagement => 'Alinear Form Management',
         DsIconName.alinearHandMoney => 'Alinear Hand Money',
         DsIconName.alinearHide => 'Alinear Hide',
@@ -507,8 +473,8 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearLoading => 'Alinear Loading',
         DsIconName.alinearLoans => 'Alinear Loans',
         DsIconName.alinearLock => 'Alinear Lock',
-        DsIconName.alinearMenu1 => 'Alinear Menu 1',
-        DsIconName.alinearMenu2 => 'Alinear Menu 2',
+        DsIconName.alinearMenu1 => 'Alinear Menu1',
+        DsIconName.alinearMenu2 => 'Alinear Menu2',
         DsIconName.alinearMission => 'Alinear Mission',
         DsIconName.alinearMobileTime => 'Alinear Mobile Time',
         DsIconName.alinearMoney => 'Alinear Money',
@@ -551,20 +517,6 @@ extension DsIconNameX on DsIconName {
         DsIconName.alinearWater => 'Alinear Water',
         DsIconName.alinearWifi => 'Alinear Wifi',
         DsIconName.alinearWithdrawal => 'Alinear Withdrawal',
-        DsIconName.add => 'Add',
-        DsIconName.check => 'Check',
-        DsIconName.close => 'Close',
-        DsIconName.copy => 'Copy',
-        DsIconName.delete => 'Delete',
-        DsIconName.download => 'Download',
-        DsIconName.edit => 'Edit',
-        DsIconName.filter => 'Filter',
-        DsIconName.more => 'More',
-        DsIconName.refresh => 'Refresh',
-        DsIconName.search => 'Search',
-        DsIconName.share => 'Share',
-        DsIconName.sort => 'Sort',
-        DsIconName.upload => 'Upload',
         DsIconName.arrowDown => 'Arrow Down',
         DsIconName.arrowLeft => 'Arrow Left',
         DsIconName.arrowRight => 'Arrow Right',
