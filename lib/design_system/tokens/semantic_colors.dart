@@ -46,6 +46,12 @@ class SemanticColors {
   final Color backgroundGradient82;
   final Color backgroundGradient83;
   final Color backgroundGradient84;
+  final Color backgroundInfoPrimary;
+  final Color backgroundInfoSecondary;
+  final Color backgroundInfoTertiary;
+  final Color backgroundInvalidPrimary;
+  final Color backgroundInvalidSecondary;
+  final Color backgroundInvalidTertiary;
   final Color backgroundOpacity1;
   final Color backgroundOpacity2;
   final Color backgroundOpacity3;
@@ -53,6 +59,9 @@ class SemanticColors {
   final Color backgroundOpacity5;
   final Color backgroundOpacity6;
   final Color backgroundOpacity7;
+  final Color backgroundPendingPrimary;
+  final Color backgroundPendingSecondary;
+  final Color backgroundPendingTertiary;
   final Color backgroundPrimary;
   final Color backgroundSecondary;
   final Color backgroundSuccessPrimary;
@@ -64,6 +73,7 @@ class SemanticColors {
   final Color backgroundWarningSecondary;
   final Color backgroundWarningTertiary;
   final Color blur1;
+  final Color borderActive;
   final Color borderBrandPrimary1;
   final Color borderBrandPrimary2;
   final Color borderBrandPrimary3;
@@ -78,6 +88,9 @@ class SemanticColors {
   final Color borderError1;
   final Color borderError2;
   final Color borderError3;
+  final Color borderInfo;
+  final Color borderInvalid;
+  final Color borderPending;
   final Color borderPrimary;
   final Color borderQuaternary;
   final Color borderQuaternary2;
@@ -106,9 +119,15 @@ class SemanticColors {
   final Color chart8;
   final Color chart9;
   final Color dividerPrimary;
-  final Color hyperlinkDisable;
-  final Color hyperlinkPrimary;
+  final Color hyperlinkDefault;
+  final Color hyperlinkDisabled;
+  final Color hyperlinkHover;
+  final Color hyperlinkLoading;
+  final Color hyperlinkPressed;
   final Color iconBrandOnError;
+  final Color iconBrandOnInfo;
+  final Color iconBrandOnInvalid;
+  final Color iconBrandOnPending;
   final Color iconBrandOnPrimary;
   final Color iconBrandOnSecondary;
   final Color iconBrandOnSuccess;
@@ -126,12 +145,15 @@ class SemanticColors {
   final Color iconDisable3;
   final Color iconDisable4;
   final Color iconError;
+  final Color iconInfo;
+  final Color iconInvalid;
   final Color iconNeutral1;
   final Color iconNeutral2;
   final Color iconNeutral3;
   final Color iconNeutral4;
   final Color iconNeutral5;
   final Color iconNeutral6;
+  final Color iconPending;
   final Color iconSuccess;
   final Color iconWarning;
   final Color iconWhite;
@@ -143,6 +165,7 @@ class SemanticColors {
   final Color shadow5;
   final Color skeletonPrimary;
   final Color skeletonSecondary;
+  final Color textActive;
   final Color textBrandOnPrimary;
   final Color textBrandOnSecondary;
   final Color textBrandPrimary1;
@@ -160,10 +183,16 @@ class SemanticColors {
   final Color textDisable3;
   final Color textDisable4;
   final Color textError;
+  final Color textInfo;
+  final Color textInvalid;
   final Color textOnBrandTertiary;
   final Color textOnError;
+  final Color textOnInfo;
+  final Color textOnInvalid;
+  final Color textOnPending;
   final Color textOnSuccess;
   final Color textOnWarning;
+  final Color textPending;
   final Color textPrimary;
   final Color textPrimary2;
   final Color textPrimary3;
@@ -220,6 +249,12 @@ class SemanticColors {
     required this.backgroundGradient82,
     required this.backgroundGradient83,
     required this.backgroundGradient84,
+    required this.backgroundInfoPrimary,
+    required this.backgroundInfoSecondary,
+    required this.backgroundInfoTertiary,
+    required this.backgroundInvalidPrimary,
+    required this.backgroundInvalidSecondary,
+    required this.backgroundInvalidTertiary,
     required this.backgroundOpacity1,
     required this.backgroundOpacity2,
     required this.backgroundOpacity3,
@@ -227,6 +262,9 @@ class SemanticColors {
     required this.backgroundOpacity5,
     required this.backgroundOpacity6,
     required this.backgroundOpacity7,
+    required this.backgroundPendingPrimary,
+    required this.backgroundPendingSecondary,
+    required this.backgroundPendingTertiary,
     required this.backgroundPrimary,
     required this.backgroundSecondary,
     required this.backgroundSuccessPrimary,
@@ -238,6 +276,7 @@ class SemanticColors {
     required this.backgroundWarningSecondary,
     required this.backgroundWarningTertiary,
     required this.blur1,
+    required this.borderActive,
     required this.borderBrandPrimary1,
     required this.borderBrandPrimary2,
     required this.borderBrandPrimary3,
@@ -252,6 +291,9 @@ class SemanticColors {
     required this.borderError1,
     required this.borderError2,
     required this.borderError3,
+    required this.borderInfo,
+    required this.borderInvalid,
+    required this.borderPending,
     required this.borderPrimary,
     required this.borderQuaternary,
     required this.borderQuaternary2,
@@ -280,9 +322,15 @@ class SemanticColors {
     required this.chart8,
     required this.chart9,
     required this.dividerPrimary,
-    required this.hyperlinkDisable,
-    required this.hyperlinkPrimary,
+    required this.hyperlinkDefault,
+    required this.hyperlinkDisabled,
+    required this.hyperlinkHover,
+    required this.hyperlinkLoading,
+    required this.hyperlinkPressed,
     required this.iconBrandOnError,
+    required this.iconBrandOnInfo,
+    required this.iconBrandOnInvalid,
+    required this.iconBrandOnPending,
     required this.iconBrandOnPrimary,
     required this.iconBrandOnSecondary,
     required this.iconBrandOnSuccess,
@@ -300,12 +348,15 @@ class SemanticColors {
     required this.iconDisable3,
     required this.iconDisable4,
     required this.iconError,
+    required this.iconInfo,
+    required this.iconInvalid,
     required this.iconNeutral1,
     required this.iconNeutral2,
     required this.iconNeutral3,
     required this.iconNeutral4,
     required this.iconNeutral5,
     required this.iconNeutral6,
+    required this.iconPending,
     required this.iconSuccess,
     required this.iconWarning,
     required this.iconWhite,
@@ -317,6 +368,7 @@ class SemanticColors {
     required this.shadow5,
     required this.skeletonPrimary,
     required this.skeletonSecondary,
+    required this.textActive,
     required this.textBrandOnPrimary,
     required this.textBrandOnSecondary,
     required this.textBrandPrimary1,
@@ -334,10 +386,16 @@ class SemanticColors {
     required this.textDisable3,
     required this.textDisable4,
     required this.textError,
+    required this.textInfo,
+    required this.textInvalid,
     required this.textOnBrandTertiary,
     required this.textOnError,
+    required this.textOnInfo,
+    required this.textOnInvalid,
+    required this.textOnPending,
     required this.textOnSuccess,
     required this.textOnWarning,
+    required this.textPending,
     required this.textPrimary,
     required this.textPrimary2,
     required this.textPrimary3,
@@ -395,6 +453,12 @@ class SemanticColors {
       backgroundGradient82: Color(0xFFF5FFFD),
       backgroundGradient83: Color(0xFFDDE7FF),
       backgroundGradient84: Color(0xFFDFE3FF),
+      backgroundInfoPrimary: Color(0xFF141ED2),
+      backgroundInfoSecondary: Color(0xFF5F7EEB),
+      backgroundInfoTertiary: Color(0xFFE9EFFF),
+      backgroundInvalidPrimary: Color(0xFFCCCCCC),
+      backgroundInvalidSecondary: Color(0xFF9B9B9B),
+      backgroundInvalidTertiary: Color(0xFFF3F3F3),
       backgroundOpacity1: Color(0x99FFFFFF),
       backgroundOpacity2: Color(0x80FFFFFF),
       backgroundOpacity3: Color(0x66FFFFFF),
@@ -402,6 +466,9 @@ class SemanticColors {
       backgroundOpacity5: Color(0x33FFFFFF),
       backgroundOpacity6: Color(0x1AFFFFFF),
       backgroundOpacity7: Color(0x0DFFFFFF),
+      backgroundPendingPrimary: Color(0xFF6D83A7),
+      backgroundPendingSecondary: Color(0xFF9BAFC8),
+      backgroundPendingTertiary: Color(0xFFFAFDFF),
       backgroundPrimary: Color(0xFFFFFFFF),
       backgroundSecondary: Color(0xFFECF5FA),
       backgroundSuccessPrimary: Color(0xFF00AD68),
@@ -413,6 +480,7 @@ class SemanticColors {
       backgroundWarningSecondary: Color(0xFFFDC64E),
       backgroundWarningTertiary: Color(0xFFFFF4D0),
       blur1: Color(0xFF75CEFF),
+      borderActive: Color(0xFF52DDDD),
       borderBrandPrimary1: Color(0xFF141ED2),
       borderBrandPrimary2: Color(0xFF5F7EEB),
       borderBrandPrimary3: Color(0xFFA3B7FD),
@@ -427,7 +495,10 @@ class SemanticColors {
       borderError1: Color(0xFFF00000),
       borderError2: Color(0xFFF34343),
       borderError3: Color(0xFFFB7070),
-      borderPrimary: Color(0xFFDAE4FF),
+      borderInfo: Color(0xFFA3B7FD),
+      borderInvalid: Color(0xFFD8D8D8),
+      borderPending: Color(0xFFCADBE8),
+      borderPrimary: Color(0xFFA3B7FD),
       borderQuaternary: Color(0xFFCADBE8),
       borderQuaternary2: Color(0xFFECF5FA),
       borderSecondary: Color(0xFF6D83A7),
@@ -455,9 +526,15 @@ class SemanticColors {
       chart8: Color(0xFF354A5E),
       chart9: Color(0xFF75CEFF),
       dividerPrimary: Color(0xFFDAE4FF),
-      hyperlinkDisable: Color(0xFF9B9B9B),
-      hyperlinkPrimary: Color(0xFF141ED2),
+      hyperlinkDefault: Color(0xFF141ED2),
+      hyperlinkDisabled: Color(0xFF9B9B9B),
+      hyperlinkHover: Color(0xFF5F7EEB),
+      hyperlinkLoading: Color(0xFFCCCCCC),
+      hyperlinkPressed: Color(0xFFA3B7FD),
       iconBrandOnError: Color(0xFFFFFFFF),
+      iconBrandOnInfo: Color(0xFFFFFFFF),
+      iconBrandOnInvalid: Color(0xFFFFFFFF),
+      iconBrandOnPending: Color(0xFFFFFFFF),
       iconBrandOnPrimary: Color(0xFFFFFFFF),
       iconBrandOnSecondary: Color(0xFFFFFFFF),
       iconBrandOnSuccess: Color(0xFFFFFFFF),
@@ -475,12 +552,15 @@ class SemanticColors {
       iconDisable3: Color(0xFFCCCCCC),
       iconDisable4: Color(0xFFF3F3F3),
       iconError: Color(0xFFF00000),
+      iconInfo: Color(0xFF141ED2),
+      iconInvalid: Color(0xFFCCCCCC),
       iconNeutral1: Color(0xFF192D39),
       iconNeutral2: Color(0xFF354A5E),
       iconNeutral3: Color(0xFF435870),
       iconNeutral4: Color(0xFF6D83A7),
       iconNeutral5: Color(0xFF9BAFC8),
       iconNeutral6: Color(0xB2ECF5FA),
+      iconPending: Color(0xFF6D83A7),
       iconSuccess: Color(0xFF00AD68),
       iconWarning: Color(0xFFFA8A00),
       iconWhite: Color(0xFFFFFFFF),
@@ -492,6 +572,7 @@ class SemanticColors {
       shadow5: Color(0x291D5CFB),
       skeletonPrimary: Color(0xFFD8D8D8),
       skeletonSecondary: Color(0xFFF3F3F3),
+      textActive: Color(0xFF52DDDD),
       textBrandOnPrimary: Color(0xFFFFFFFF),
       textBrandOnSecondary: Color(0xFFFFFFFF),
       textBrandPrimary1: Color(0xFF141ED2),
@@ -509,10 +590,16 @@ class SemanticColors {
       textDisable3: Color(0xFFF3F3F3),
       textDisable4: Color(0xFFCCCCCC),
       textError: Color(0xFFF34343),
+      textInfo: Color(0xFF141ED2),
+      textInvalid: Color(0xFFCCCCCC),
       textOnBrandTertiary: Color(0xFF192D39),
       textOnError: Color(0xFFFFFFFF),
+      textOnInfo: Color(0xFFFFFFFF),
+      textOnInvalid: Color(0xFFFFFFFF),
+      textOnPending: Color(0xFFFFFFFF),
       textOnSuccess: Color(0xFFFFFFFF),
       textOnWarning: Color(0xFFFA8A00),
+      textPending: Color(0xFF6D83A7),
       textPrimary: Color(0xFF192D39),
       textPrimary2: Color(0xFF354A5E),
       textPrimary3: Color(0xFF435870),
@@ -570,6 +657,12 @@ class SemanticColors {
       backgroundGradient82: Color(0xFFF5FFFD),
       backgroundGradient83: Color(0xFFDDE7FF),
       backgroundGradient84: Color(0xFFDFE3FF),
+      backgroundInfoPrimary: Color(0xFF141ED2),
+      backgroundInfoSecondary: Color(0xFF5F7EEB),
+      backgroundInfoTertiary: Color(0xFFE9EFFF),
+      backgroundInvalidPrimary: Color(0xFFCCCCCC),
+      backgroundInvalidSecondary: Color(0xFF9B9B9B),
+      backgroundInvalidTertiary: Color(0xFFF3F3F3),
       backgroundOpacity1: Color(0x99FFFFFF),
       backgroundOpacity2: Color(0x80FFFFFF),
       backgroundOpacity3: Color(0x66FFFFFF),
@@ -577,6 +670,9 @@ class SemanticColors {
       backgroundOpacity5: Color(0x33FFFFFF),
       backgroundOpacity6: Color(0x1AFFFFFF),
       backgroundOpacity7: Color(0x0DFFFFFF),
+      backgroundPendingPrimary: Color(0xFF6D83A7),
+      backgroundPendingSecondary: Color(0xFF9BAFC8),
+      backgroundPendingTertiary: Color(0xFFFAFDFF),
       backgroundPrimary: Color(0xFF192D39),
       backgroundSecondary: Color(0xFF354A5E),
       backgroundSuccessPrimary: Color(0xFF008F56),
@@ -588,6 +684,7 @@ class SemanticColors {
       backgroundWarningSecondary: Color(0xFFFA8A00),
       backgroundWarningTertiary: Color(0xFFFDC64E),
       blur1: Color(0xFF435870),
+      borderActive: Color(0xFF52DDDD),
       borderBrandPrimary1: Color(0xFFA3B7FD),
       borderBrandPrimary2: Color(0xFFDAE4FF),
       borderBrandPrimary3: Color(0xFFE9EFFF),
@@ -602,6 +699,9 @@ class SemanticColors {
       borderError1: Color(0xFFF34343),
       borderError2: Color(0xFFFB7070),
       borderError3: Color(0xFFFFB1B1),
+      borderInfo: Color(0xFFA3B7FD),
+      borderInvalid: Color(0xFFD8D8D8),
+      borderPending: Color(0xFFCADBE8),
       borderPrimary: Color(0xFF435870),
       borderQuaternary: Color(0xFF354A5E),
       borderQuaternary2: Color(0xFF273B4B),
@@ -630,9 +730,15 @@ class SemanticColors {
       chart8: Color(0xFFCADBE8),
       chart9: Color(0xFFBDE8FF),
       dividerPrimary: Color(0xFF435870),
-      hyperlinkDisable: Color(0xFF808080),
-      hyperlinkPrimary: Color(0xFFA3B7FD),
+      hyperlinkDefault: Color(0xFF141ED2),
+      hyperlinkDisabled: Color(0xFF9B9B9B),
+      hyperlinkHover: Color(0xFF5F7EEB),
+      hyperlinkLoading: Color(0xFFCCCCCC),
+      hyperlinkPressed: Color(0xFFA3B7FD),
       iconBrandOnError: Color(0xFFFFFFFF),
+      iconBrandOnInfo: Color(0xFFFFFFFF),
+      iconBrandOnInvalid: Color(0xFFFFFFFF),
+      iconBrandOnPending: Color(0xFFFFFFFF),
       iconBrandOnPrimary: Color(0xFFFFFFFF),
       iconBrandOnSecondary: Color(0xFFFFFFFF),
       iconBrandOnSuccess: Color(0xFFFFFFFF),
@@ -650,12 +756,15 @@ class SemanticColors {
       iconDisable3: Color(0xFF9B9B9B),
       iconDisable4: Color(0xFF808080),
       iconError: Color(0xFFFB7070),
+      iconInfo: Color(0xFF141ED2),
+      iconInvalid: Color(0xFFCCCCCC),
       iconNeutral1: Color(0xFFFFFFFF),
       iconNeutral2: Color(0xFFECF5FA),
       iconNeutral3: Color(0xFFCADBE8),
       iconNeutral4: Color(0xFF9BAFC8),
       iconNeutral5: Color(0xFF6D83A7),
       iconNeutral6: Color(0xFF516682),
+      iconPending: Color(0xFF6D83A7),
       iconSuccess: Color(0xFF85F1C6),
       iconWarning: Color(0xFFFDC64E),
       iconWhite: Color(0xFFFFFFFF),
@@ -667,6 +776,7 @@ class SemanticColors {
       shadow5: Color(0x4DFFFFFF),
       skeletonPrimary: Color(0xFF646464),
       skeletonSecondary: Color(0xFF4D4D4D),
+      textActive: Color(0xFF52DDDD),
       textBrandOnPrimary: Color(0xFFFFFFFF),
       textBrandOnSecondary: Color(0xFFFFFFFF),
       textBrandPrimary1: Color(0xFFA3B7FD),
@@ -684,10 +794,16 @@ class SemanticColors {
       textDisable3: Color(0xFFCCCCCC),
       textDisable4: Color(0xFF9B9B9B),
       textError: Color(0xFFFB7070),
+      textInfo: Color(0xFF141ED2),
+      textInvalid: Color(0xFFCCCCCC),
       textOnBrandTertiary: Color(0xFFFFFFFF),
       textOnError: Color(0xFFFFFFFF),
+      textOnInfo: Color(0xFFFFFFFF),
+      textOnInvalid: Color(0xFFFFFFFF),
+      textOnPending: Color(0xFFFFFFFF),
       textOnSuccess: Color(0xFFFFFFFF),
       textOnWarning: Color(0xFFFFFFFF),
+      textPending: Color(0xFF6D83A7),
       textPrimary: Color(0xFFFFFFFF),
       textPrimary2: Color(0xFFECF5FA),
       textPrimary3: Color(0xFFCADBE8),

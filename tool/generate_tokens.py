@@ -257,14 +257,24 @@ ThemeData buildAppTheme({required SemanticColors colors, Brightness brightness =
 
 
 def write_barrel() -> None:
-    content = """export 'tokens/color_utils.dart';
-export 'tokens/primitive_tokens.dart';
-export 'tokens/semantic_colors.dart';
-export 'tokens/dimension_tokens.dart';
-export 'tokens/typography_tokens.dart';
-export 'theme/app_theme.dart';
-"""
-    (ROOT / "lib" / "design_system" / "design_system.dart").write_text(content)
+    """Ensure token/theme exports exist without wiping component exports."""
+    barrel = ROOT / "lib" / "design_system" / "design_system.dart"
+    required = [
+        "export 'tokens/color_utils.dart';",
+        "export 'tokens/primitive_tokens.dart';",
+        "export 'tokens/semantic_colors.dart';",
+        "export 'tokens/dimension_tokens.dart';",
+        "export 'tokens/typography_tokens.dart';",
+        "export 'theme/app_theme.dart';",
+    ]
+    if barrel.exists():
+        existing = barrel.read_text()
+        missing = [line for line in required if line not in existing]
+        if missing:
+            # Insert missing token exports at the top, keep component exports.
+            barrel.write_text("\n".join(missing) + "\n" + existing)
+        return
+    barrel.write_text("\n".join(required) + "\n")
 
 
 def save_export(data: dict) -> None:

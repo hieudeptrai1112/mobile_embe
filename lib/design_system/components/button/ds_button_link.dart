@@ -139,14 +139,14 @@ class _DsButtonLinkPalette {
     required bool loading,
   }) {
     if (disabled) {
-      return colors.hyperlinkDisable;
+      return colors.hyperlinkDisabled;
     }
     if (loading) {
-      return colors.textBrandPrimary4;
+      return colors.hyperlinkLoading;
     }
     if (pressed) {
-      return colors.textBrandPrimary3;
+      return colors.hyperlinkPressed;
     }
-    return colors.hyperlinkPrimary;
+    return colors.hyperlinkDefault;
   }
 }

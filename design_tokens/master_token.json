@@ -2,571 +2,4684 @@
   "source": "https://www.figma.com/design/VtfMVehVniPRQ9BTYzQzdD/Master-Token",
   "collections": [
     "Global",
-    "Alias"
+    "Alias",
+    "Status",
+    "Data",
+    "Brand"
   ],
+  "notes": {
+    "aliasMode": "Default",
+    "statusMode": "Light",
+    "dataMode": "Light",
+    "brandModeInLight": "Default",
+    "darkMode": "Preserved from previous export; Figma Alias no longer has Light/Dark modes. New tokens fall back to light values.",
+    "brandModesAvailable": [
+      "Default",
+      "Silver",
+      "Gold",
+      "Diamond",
+      "Platinum",
+      "Premium"
+    ]
+  },
   "global": [
-    { "name": "black/100%", "value": "#000000" },
-    { "name": "black/50%", "value": "#00000080" },
-    { "name": "blue/100", "value": "#E9EFFF" },
-    { "name": "blue/1000", "value": "#00087C" },
-    { "name": "blue/200", "value": "#DAE4FF" },
-    { "name": "blue/300", "value": "#A3B7FD" },
-    { "name": "blue/400", "value": "#5F7EEB" },
-    { "name": "blue/500", "value": "#141ED2" },
-    { "name": "blue/600", "value": "#121BBB" },
-    { "name": "blue/700", "value": "#0E16AB" },
-    { "name": "blue/800", "value": "#09129B" },
-    { "name": "blue/900", "value": "#050D8C" },
-    { "name": "darkblue/100", "value": "#FAFDFF" },
-    { "name": "darkblue/1000", "value": "#192D39" },
-    { "name": "darkblue/200", "value": "#ECF5FA" },
-    { "name": "darkblue/300", "value": "#CADBE8" },
-    { "name": "darkblue/400", "value": "#9BAFC8" },
-    { "name": "darkblue/50", "value": "#ECF5FAB2" },
-    { "name": "darkblue/500", "value": "#6D83A7" },
-    { "name": "darkblue/600", "value": "#516682" },
-    { "name": "darkblue/700", "value": "#435870" },
-    { "name": "darkblue/800", "value": "#354A5E" },
-    { "name": "darkblue/900", "value": "#273B4B" },
-    { "name": "gradient/100/1", "value": "#141ED2" },
-    { "name": "gradient/100/2", "value": "#0075FF" },
-    { "name": "gradient/200/1", "value": "#D6EAF000" },
-    { "name": "gradient/200/2", "value": "#BDD5E4B2" },
-    { "name": "gradient/300/1", "value": "#AEB1D4" },
-    { "name": "gradient/300/2", "value": "#AAC1DD" },
-    { "name": "gradient/400/1", "value": "#888CD4" },
-    { "name": "gradient/400/2", "value": "#80AEE5" },
-    { "name": "gradient/500/1", "value": "#606AD5" },
-    { "name": "gradient/500/2", "value": "#569AED" },
-    { "name": "gradient/600/1", "value": "#3949D6" },
-    { "name": "gradient/600/2", "value": "#2C87F6" },
-    { "name": "gradient/700/1", "value": "#141ED2" },
-    { "name": "gradient/700/2", "value": "#0075FF" },
-    { "name": "gradient/800/1", "value": "#FFFFFF" },
-    { "name": "gradient/800/2", "value": "#F5FFFD" },
-    { "name": "gradient/800/3", "value": "#DDE7FF" },
-    { "name": "gradient/800/4", "value": "#DFE3FF" },
-    { "name": "grayscale/200", "value": "#F3F3F3" },
-    { "name": "grayscale/300", "value": "#D8D8D8" },
-    { "name": "grayscale/400", "value": "#CCCCCC" },
-    { "name": "grayscale/500", "value": "#9B9B9B" },
-    { "name": "grayscale/600", "value": "#808080" },
-    { "name": "grayscale/700", "value": "#646464" },
-    { "name": "grayscale/800", "value": "#4D4D4D" },
-    { "name": "grayscale/900", "value": "#2E2E2E" },
-    { "name": "green/100", "value": "#E6F6EC" },
-    { "name": "green/1000", "value": "#01633C" },
-    { "name": "green/200", "value": "#CDFCE9" },
-    { "name": "green/300", "value": "#85F1C6" },
-    { "name": "green/400", "value": "#3DD196" },
-    { "name": "green/500", "value": "#00AD68" },
-    { "name": "green/600", "value": "#009E5F" },
-    { "name": "green/700", "value": "#008F56" },
-    { "name": "green/800", "value": "#01814E" },
-    { "name": "green/900", "value": "#017245" },
-    { "name": "lightblue/100", "value": "#DEF5FF" },
-    { "name": "lightblue/1000", "value": "#003E7C" },
-    { "name": "lightblue/200", "value": "#BDE8FF" },
-    { "name": "lightblue/300", "value": "#75CEFF" },
-    { "name": "lightblue/400", "value": "#00A5FF" },
-    { "name": "lightblue/500", "value": "#0075FF" },
-    { "name": "lightblue/600", "value": "#006AE5" },
-    { "name": "lightblue/700", "value": "#005FCB" },
-    { "name": "lightblue/800", "value": "#0054B0" },
-    { "name": "lightblue/900", "value": "#004996" },
-    { "name": "orange/100", "value": "#FFF4D0" },
-    { "name": "orange/1000", "value": "#703A00" },
-    { "name": "orange/200", "value": "#FBDE97" },
-    { "name": "orange/300", "value": "#FDC64E" },
-    { "name": "orange/400", "value": "#F9A500" },
-    { "name": "orange/500", "value": "#FA8A00" },
-    { "name": "orange/600", "value": "#DE7A00" },
-    { "name": "orange/700", "value": "#C36A00" },
-    { "name": "orange/800", "value": "#A75A00" },
-    { "name": "orange/900", "value": "#8C4A00" },
-    { "name": "purple/100", "value": "#F2EBFF" },
-    { "name": "purple/1000", "value": "#393999" },
-    { "name": "purple/200", "value": "#DBD3FF" },
-    { "name": "purple/300", "value": "#BBADFF" },
-    { "name": "purple/400", "value": "#9781FF" },
-    { "name": "purple/500", "value": "#7B5FFF" },
-    { "name": "purple/600", "value": "#6150E1" },
-    { "name": "purple/700", "value": "#5348D3" },
-    { "name": "purple/800", "value": "#4641C4" },
-    { "name": "purple/900", "value": "#3939B5" },
-    { "name": "red/100", "value": "#FFE3E3" },
-    { "name": "red/1000", "value": "#6B0B08" },
-    { "name": "red/200", "value": "#FFB1B1" },
-    { "name": "red/300", "value": "#FB7070" },
-    { "name": "red/400", "value": "#F34343" },
-    { "name": "red/500", "value": "#F00000" },
-    { "name": "red/600", "value": "#D50202" },
-    { "name": "red/700", "value": "#BB0403" },
-    { "name": "red/800", "value": "#A00705" },
-    { "name": "red/900", "value": "#860906" },
-    { "name": "skyblue/100", "value": "#1D5CFB29" },
-    { "name": "spacing/0", "value": 0 },
-    { "name": "spacing/1", "value": 1 },
-    { "name": "spacing/10", "value": 10 },
-    { "name": "spacing/100", "value": 100 },
-    { "name": "spacing/12", "value": 12 },
-    { "name": "spacing/128", "value": 128 },
-    { "name": "spacing/1280", "value": 1280 },
-    { "name": "spacing/14", "value": 14 },
-    { "name": "spacing/1440", "value": 1440 },
-    { "name": "spacing/16", "value": 16 },
-    { "name": "spacing/1_5", "value": 1.5 },
-    { "name": "spacing/2", "value": 2 },
-    { "name": "spacing/20", "value": 20 },
-    { "name": "spacing/24", "value": 24 },
-    { "name": "spacing/28", "value": 28 },
-    { "name": "spacing/319", "value": 319 },
-    { "name": "spacing/32", "value": 32 },
-    { "name": "spacing/375", "value": 375 },
-    { "name": "spacing/4", "value": 4 },
-    { "name": "spacing/40", "value": 40 },
-    { "name": "spacing/52", "value": 52 },
-    { "name": "spacing/8", "value": 8 },
-    { "name": "spacing/80", "value": 80 },
-    { "name": "spacing/999", "value": 999 },
-    { "name": "turquoise/100", "value": "#E7FEFE" },
-    { "name": "turquoise/1000", "value": "#045654" },
-    { "name": "turquoise/200", "value": "#D4FBFB" },
-    { "name": "turquoise/300", "value": "#A2F5F5" },
-    { "name": "turquoise/400", "value": "#52DDDD" },
-    { "name": "turquoise/500", "value": "#12B7B7" },
-    { "name": "turquoise/600", "value": "#0FA4A3" },
-    { "name": "turquoise/700", "value": "#0C908F" },
-    { "name": "turquoise/800", "value": "#0A7D7C" },
-    { "name": "turquoise/900", "value": "#076968" },
-    { "name": "typography/font-body-display", "value": "Averta Std CY" },
-    { "name": "typography/font-family-display", "value": "Averta Std CY" },
-    { "name": "typography/font-weight-regular", "value": "regular" },
-    { "name": "typography/font-weight-semibold", "value": "semibold" },
-    { "name": "white/10%", "value": "#FFFFFF1A" },
-    { "name": "white/100%", "value": "#FFFFFF" },
-    { "name": "white/20%", "value": "#FFFFFF33" },
-    { "name": "white/30%", "value": "#FFFFFF4D" },
-    { "name": "white/40%", "value": "#FFFFFF66" },
-    { "name": "white/5%", "value": "#FFFFFF0D" },
-    { "name": "white/50%", "value": "#FFFFFF80" },
-    { "name": "white/60%", "value": "#FFFFFF99" }
+    {
+      "name": "black/100%",
+      "value": "#000000"
+    },
+    {
+      "name": "black/50%",
+      "value": "#00000080"
+    },
+    {
+      "name": "blue/100",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "blue/1000",
+      "value": "#00087C"
+    },
+    {
+      "name": "blue/200",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "blue/300",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "blue/400",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "blue/500",
+      "value": "#141ED2"
+    },
+    {
+      "name": "blue/600",
+      "value": "#121BBB"
+    },
+    {
+      "name": "blue/700",
+      "value": "#0E16AB"
+    },
+    {
+      "name": "blue/800",
+      "value": "#09129B"
+    },
+    {
+      "name": "blue/900",
+      "value": "#050D8C"
+    },
+    {
+      "name": "brown/100",
+      "value": "#DFD4C5"
+    },
+    {
+      "name": "brown/200",
+      "value": "#CFC0A9"
+    },
+    {
+      "name": "brown/300",
+      "value": "#B9A382"
+    },
+    {
+      "name": "brown/400",
+      "value": "#AC916A"
+    },
+    {
+      "name": "brown/50",
+      "value": "#F5F1EC"
+    },
+    {
+      "name": "brown/500",
+      "value": "#977545"
+    },
+    {
+      "name": "brown/600",
+      "value": "#896A3F"
+    },
+    {
+      "name": "brown/700",
+      "value": "#6B5331"
+    },
+    {
+      "name": "brown/800",
+      "value": "#534026"
+    },
+    {
+      "name": "brown/900",
+      "value": "#3F311D"
+    },
+    {
+      "name": "darkblue/100",
+      "value": "#FAFDFF"
+    },
+    {
+      "name": "darkblue/1000",
+      "value": "#192D39"
+    },
+    {
+      "name": "darkblue/200",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "darkblue/300",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "darkblue/400",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "darkblue/50",
+      "value": "#ECF5FAB2"
+    },
+    {
+      "name": "darkblue/500",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "darkblue/600",
+      "value": "#516682"
+    },
+    {
+      "name": "darkblue/700",
+      "value": "#435870"
+    },
+    {
+      "name": "darkblue/800",
+      "value": "#354A5E"
+    },
+    {
+      "name": "darkblue/900",
+      "value": "#273B4B"
+    },
+    {
+      "name": "gold/100",
+      "value": "#FEE5BA"
+    },
+    {
+      "name": "gold/200",
+      "value": "#FDD998"
+    },
+    {
+      "name": "gold/300",
+      "value": "#FCC76A"
+    },
+    {
+      "name": "gold/400",
+      "value": "#FCBD4D"
+    },
+    {
+      "name": "gold/50",
+      "value": "#FFF7E9"
+    },
+    {
+      "name": "gold/500",
+      "value": "#FBAC20"
+    },
+    {
+      "name": "gold/600",
+      "value": "#E49D1D"
+    },
+    {
+      "name": "gold/700",
+      "value": "#B27A17"
+    },
+    {
+      "name": "gold/800",
+      "value": "#8A5F12"
+    },
+    {
+      "name": "gold/900",
+      "value": "#69480D"
+    },
+    {
+      "name": "gradient/100/1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "gradient/100/2",
+      "value": "#0075FF"
+    },
+    {
+      "name": "gradient/200/1",
+      "value": "#D6EAF000"
+    },
+    {
+      "name": "gradient/200/2",
+      "value": "#BDD5E4B2"
+    },
+    {
+      "name": "gradient/300/1",
+      "value": "#AEB1D4"
+    },
+    {
+      "name": "gradient/300/2",
+      "value": "#AAC1DD"
+    },
+    {
+      "name": "gradient/400/1",
+      "value": "#888CD4"
+    },
+    {
+      "name": "gradient/400/2",
+      "value": "#80AEE5"
+    },
+    {
+      "name": "gradient/500/1",
+      "value": "#606AD5"
+    },
+    {
+      "name": "gradient/500/2",
+      "value": "#569AED"
+    },
+    {
+      "name": "gradient/600/1",
+      "value": "#3949D6"
+    },
+    {
+      "name": "gradient/600/2",
+      "value": "#2C87F6"
+    },
+    {
+      "name": "gradient/700/1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "gradient/700/2",
+      "value": "#0075FF"
+    },
+    {
+      "name": "gradient/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/800/2",
+      "value": "#F5FFFD"
+    },
+    {
+      "name": "gradient/800/3",
+      "value": "#DDE7FF"
+    },
+    {
+      "name": "gradient/800/4",
+      "value": "#DFE3FF"
+    },
+    {
+      "name": "gradient/brown/100/1",
+      "value": "#7A5420"
+    },
+    {
+      "name": "gradient/brown/100/2",
+      "value": "#AC916A"
+    },
+    {
+      "name": "gradient/brown/200/1",
+      "value": "#EFEAE4"
+    },
+    {
+      "name": "gradient/brown/200/2",
+      "value": "#E6DED2"
+    },
+    {
+      "name": "gradient/brown/300/1",
+      "value": "#CEBFAD"
+    },
+    {
+      "name": "gradient/brown/300/2",
+      "value": "#DCD0BF"
+    },
+    {
+      "name": "gradient/brown/400/1",
+      "value": "#B69F85"
+    },
+    {
+      "name": "gradient/brown/400/2",
+      "value": "#CEBDA6"
+    },
+    {
+      "name": "gradient/brown/500/1",
+      "value": "#9F8360"
+    },
+    {
+      "name": "gradient/brown/500/2",
+      "value": "#C0AB8E"
+    },
+    {
+      "name": "gradient/brown/600/1",
+      "value": "#8C6A40"
+    },
+    {
+      "name": "gradient/brown/600/2",
+      "value": "#B59C7A"
+    },
+    {
+      "name": "gradient/brown/700/1",
+      "value": "#7A5420"
+    },
+    {
+      "name": "gradient/brown/700/2",
+      "value": "#AC916A"
+    },
+    {
+      "name": "gradient/brown/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/brown/800/2",
+      "value": "#FCFBFA"
+    },
+    {
+      "name": "gradient/brown/800/3",
+      "value": "#EEE8E2"
+    },
+    {
+      "name": "gradient/brown/800/4",
+      "value": "#EFEAE3"
+    },
+    {
+      "name": "gradient/gold/100/1",
+      "value": "#CD880D"
+    },
+    {
+      "name": "gradient/gold/100/2",
+      "value": "#FBBA45"
+    },
+    {
+      "name": "gradient/gold/200/1",
+      "value": "#FAF1E7"
+    },
+    {
+      "name": "gradient/gold/200/2",
+      "value": "#FFEBCE"
+    },
+    {
+      "name": "gradient/gold/300/1",
+      "value": "#EFD5B5"
+    },
+    {
+      "name": "gradient/gold/300/2",
+      "value": "#FEE3B9"
+    },
+    {
+      "name": "gradient/gold/400/1",
+      "value": "#E6BF8F"
+    },
+    {
+      "name": "gradient/gold/400/2",
+      "value": "#FED79C"
+    },
+    {
+      "name": "gradient/gold/500/1",
+      "value": "#DDAB69"
+    },
+    {
+      "name": "gradient/gold/500/2",
+      "value": "#FDCC7D"
+    },
+    {
+      "name": "gradient/gold/600/1",
+      "value": "#D59944"
+    },
+    {
+      "name": "gradient/gold/600/2",
+      "value": "#FCC260"
+    },
+    {
+      "name": "gradient/gold/700/1",
+      "value": "#CD880D"
+    },
+    {
+      "name": "gradient/gold/700/2",
+      "value": "#FBBA45"
+    },
+    {
+      "name": "gradient/gold/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/gold/800/2",
+      "value": "#FEFDFA"
+    },
+    {
+      "name": "gradient/gold/800/3",
+      "value": "#F9F0E5"
+    },
+    {
+      "name": "gradient/gold/800/4",
+      "value": "#FFF3E1"
+    },
+    {
+      "name": "gradient/magenta/100/1",
+      "value": "#A013C0"
+    },
+    {
+      "name": "gradient/magenta/100/2",
+      "value": "#E264FE"
+    },
+    {
+      "name": "gradient/magenta/200/1",
+      "value": "#F5E7F9"
+    },
+    {
+      "name": "gradient/magenta/200/2",
+      "value": "#F9D5FF"
+    },
+    {
+      "name": "gradient/magenta/300/1",
+      "value": "#DFB5EC"
+    },
+    {
+      "name": "gradient/magenta/300/2",
+      "value": "#F6C3FF"
+    },
+    {
+      "name": "gradient/magenta/400/1",
+      "value": "#CE8FE0"
+    },
+    {
+      "name": "gradient/magenta/400/2",
+      "value": "#F1A9FF"
+    },
+    {
+      "name": "gradient/magenta/500/1",
+      "value": "#BE6AD5"
+    },
+    {
+      "name": "gradient/magenta/500/2",
+      "value": "#EB90FF"
+    },
+    {
+      "name": "gradient/magenta/600/1",
+      "value": "#AE46CA"
+    },
+    {
+      "name": "gradient/magenta/600/2",
+      "value": "#E678FF"
+    },
+    {
+      "name": "gradient/magenta/700/1",
+      "value": "#A013C0"
+    },
+    {
+      "name": "gradient/magenta/700/2",
+      "value": "#E264FE"
+    },
+    {
+      "name": "gradient/magenta/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/magenta/800/2",
+      "value": "#FEFBFF"
+    },
+    {
+      "name": "gradient/magenta/800/3",
+      "value": "#F4E5F9"
+    },
+    {
+      "name": "gradient/magenta/800/4",
+      "value": "#FBE5FF"
+    },
+    {
+      "name": "gradient/ocean/100/1",
+      "value": "#064C9C"
+    },
+    {
+      "name": "gradient/ocean/100/2",
+      "value": "#5F9DE4"
+    },
+    {
+      "name": "gradient/ocean/200/1",
+      "value": "#E2E9F4"
+    },
+    {
+      "name": "gradient/ocean/200/2",
+      "value": "#D0E2F9"
+    },
+    {
+      "name": "gradient/ocean/300/1",
+      "value": "#A7BEDE"
+    },
+    {
+      "name": "gradient/ocean/300/2",
+      "value": "#BCD6F5"
+    },
+    {
+      "name": "gradient/ocean/400/1",
+      "value": "#7C9DCC"
+    },
+    {
+      "name": "gradient/ocean/400/2",
+      "value": "#A1C6F1"
+    },
+    {
+      "name": "gradient/ocean/500/1",
+      "value": "#547FBB"
+    },
+    {
+      "name": "gradient/ocean/500/2",
+      "value": "#87B6EC"
+    },
+    {
+      "name": "gradient/ocean/600/1",
+      "value": "#3065AB"
+    },
+    {
+      "name": "gradient/ocean/600/2",
+      "value": "#71A8E8"
+    },
+    {
+      "name": "gradient/ocean/700/1",
+      "value": "#064C9C"
+    },
+    {
+      "name": "gradient/ocean/700/2",
+      "value": "#5F9DE4"
+    },
+    {
+      "name": "gradient/ocean/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/ocean/800/2",
+      "value": "#FAFBFE"
+    },
+    {
+      "name": "gradient/ocean/800/3",
+      "value": "#E0E8F4"
+    },
+    {
+      "name": "gradient/ocean/800/4",
+      "value": "#E1EDFB"
+    },
+    {
+      "name": "gradient/silver/100/1",
+      "value": "#313A3E"
+    },
+    {
+      "name": "gradient/silver/100/2",
+      "value": "#757B7E"
+    },
+    {
+      "name": "gradient/silver/200/1",
+      "value": "#E4E5E6"
+    },
+    {
+      "name": "gradient/silver/200/2",
+      "value": "#D4D6D7"
+    },
+    {
+      "name": "gradient/silver/300/1",
+      "value": "#AFB3B5"
+    },
+    {
+      "name": "gradient/silver/300/2",
+      "value": "#C3C5C7"
+    },
+    {
+      "name": "gradient/silver/400/1",
+      "value": "#898E91"
+    },
+    {
+      "name": "gradient/silver/400/2",
+      "value": "#ABAFB1"
+    },
+    {
+      "name": "gradient/silver/500/1",
+      "value": "#666D70"
+    },
+    {
+      "name": "gradient/silver/500/2",
+      "value": "#959A9C"
+    },
+    {
+      "name": "gradient/silver/600/1",
+      "value": "#495255"
+    },
+    {
+      "name": "gradient/silver/600/2",
+      "value": "#83888B"
+    },
+    {
+      "name": "gradient/silver/700/1",
+      "value": "#313A3E"
+    },
+    {
+      "name": "gradient/silver/700/2",
+      "value": "#757B7E"
+    },
+    {
+      "name": "gradient/silver/800/1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gradient/silver/800/2",
+      "value": "#FAFBFB"
+    },
+    {
+      "name": "gradient/silver/800/3",
+      "value": "#E3E4E5"
+    },
+    {
+      "name": "gradient/silver/800/4",
+      "value": "#E4E5E6"
+    },
+    {
+      "name": "grayscale/200",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "grayscale/300",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "grayscale/400",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "grayscale/500",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "grayscale/600",
+      "value": "#808080"
+    },
+    {
+      "name": "grayscale/700",
+      "value": "#646464"
+    },
+    {
+      "name": "grayscale/800",
+      "value": "#4D4D4D"
+    },
+    {
+      "name": "grayscale/900",
+      "value": "#2E2E2E"
+    },
+    {
+      "name": "green/100",
+      "value": "#E6F6EC"
+    },
+    {
+      "name": "green/1000",
+      "value": "#01633C"
+    },
+    {
+      "name": "green/200",
+      "value": "#CDFCE9"
+    },
+    {
+      "name": "green/300",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "green/400",
+      "value": "#3DD196"
+    },
+    {
+      "name": "green/500",
+      "value": "#00AD68"
+    },
+    {
+      "name": "green/600",
+      "value": "#009E5F"
+    },
+    {
+      "name": "green/700",
+      "value": "#008F56"
+    },
+    {
+      "name": "green/800",
+      "value": "#01814E"
+    },
+    {
+      "name": "green/900",
+      "value": "#017245"
+    },
+    {
+      "name": "lightblue/100",
+      "value": "#DEF5FF"
+    },
+    {
+      "name": "lightblue/1000",
+      "value": "#003E7C"
+    },
+    {
+      "name": "lightblue/200",
+      "value": "#BDE8FF"
+    },
+    {
+      "name": "lightblue/300",
+      "value": "#75CEFF"
+    },
+    {
+      "name": "lightblue/400",
+      "value": "#00A5FF"
+    },
+    {
+      "name": "lightblue/500",
+      "value": "#0075FF"
+    },
+    {
+      "name": "lightblue/600",
+      "value": "#006AE5"
+    },
+    {
+      "name": "lightblue/700",
+      "value": "#005FCB"
+    },
+    {
+      "name": "lightblue/800",
+      "value": "#0054B0"
+    },
+    {
+      "name": "lightblue/900",
+      "value": "#004996"
+    },
+    {
+      "name": "magenta/100",
+      "value": "#F6D2FF"
+    },
+    {
+      "name": "magenta/200",
+      "value": "#F2BCFF"
+    },
+    {
+      "name": "magenta/300",
+      "value": "#EC9DFE"
+    },
+    {
+      "name": "magenta/400",
+      "value": "#E98AFE"
+    },
+    {
+      "name": "magenta/50",
+      "value": "#FCF0FF"
+    },
+    {
+      "name": "magenta/500",
+      "value": "#E36DFE"
+    },
+    {
+      "name": "magenta/600",
+      "value": "#CF63E7"
+    },
+    {
+      "name": "magenta/700",
+      "value": "#A14DB4"
+    },
+    {
+      "name": "magenta/800",
+      "value": "#7D3C8C"
+    },
+    {
+      "name": "magenta/900",
+      "value": "#5F2E6B"
+    },
+    {
+      "name": "ocean/100",
+      "value": "#B5CEEA"
+    },
+    {
+      "name": "ocean/200",
+      "value": "#91B6E0"
+    },
+    {
+      "name": "ocean/300",
+      "value": "#5F94D1"
+    },
+    {
+      "name": "ocean/400",
+      "value": "#4080C9"
+    },
+    {
+      "name": "ocean/50",
+      "value": "#E7EFF8"
+    },
+    {
+      "name": "ocean/500",
+      "value": "#1060BB"
+    },
+    {
+      "name": "ocean/600",
+      "value": "#0F57AA"
+    },
+    {
+      "name": "ocean/700",
+      "value": "#0B4485"
+    },
+    {
+      "name": "ocean/800",
+      "value": "#093567"
+    },
+    {
+      "name": "ocean/900",
+      "value": "#07284F"
+    },
+    {
+      "name": "orange/100",
+      "value": "#FFF4D0"
+    },
+    {
+      "name": "orange/1000",
+      "value": "#703A00"
+    },
+    {
+      "name": "orange/200",
+      "value": "#FBDE97"
+    },
+    {
+      "name": "orange/300",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "orange/400",
+      "value": "#F9A500"
+    },
+    {
+      "name": "orange/500",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "orange/600",
+      "value": "#DE7A00"
+    },
+    {
+      "name": "orange/700",
+      "value": "#C36A00"
+    },
+    {
+      "name": "orange/800",
+      "value": "#A75A00"
+    },
+    {
+      "name": "orange/900",
+      "value": "#8C4A00"
+    },
+    {
+      "name": "purple/100",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "purple/1000",
+      "value": "#393999"
+    },
+    {
+      "name": "purple/200",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "purple/300",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "purple/400",
+      "value": "#9781FF"
+    },
+    {
+      "name": "purple/500",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "purple/600",
+      "value": "#6150E1"
+    },
+    {
+      "name": "purple/700",
+      "value": "#5348D3"
+    },
+    {
+      "name": "purple/800",
+      "value": "#4641C4"
+    },
+    {
+      "name": "purple/900",
+      "value": "#3939B5"
+    },
+    {
+      "name": "red/100",
+      "value": "#FFE3E3"
+    },
+    {
+      "name": "red/1000",
+      "value": "#6B0B08"
+    },
+    {
+      "name": "red/200",
+      "value": "#FFB1B1"
+    },
+    {
+      "name": "red/300",
+      "value": "#FB7070"
+    },
+    {
+      "name": "red/400",
+      "value": "#F34343"
+    },
+    {
+      "name": "red/500",
+      "value": "#F00000"
+    },
+    {
+      "name": "red/600",
+      "value": "#D50202"
+    },
+    {
+      "name": "red/700",
+      "value": "#BB0403"
+    },
+    {
+      "name": "red/800",
+      "value": "#A00705"
+    },
+    {
+      "name": "red/900",
+      "value": "#860906"
+    },
+    {
+      "name": "silver/100",
+      "value": "#BFC2C3"
+    },
+    {
+      "name": "silver/200",
+      "value": "#A0A4A6"
+    },
+    {
+      "name": "silver/300",
+      "value": "#757B7E"
+    },
+    {
+      "name": "silver/400",
+      "value": "#5A6165"
+    },
+    {
+      "name": "silver/50",
+      "value": "#EAEBEC"
+    },
+    {
+      "name": "silver/500",
+      "value": "#313A3E"
+    },
+    {
+      "name": "silver/600",
+      "value": "#2D3538"
+    },
+    {
+      "name": "silver/700",
+      "value": "#23292C"
+    },
+    {
+      "name": "silver/800",
+      "value": "#1B2022"
+    },
+    {
+      "name": "silver/900",
+      "value": "#15181A"
+    },
+    {
+      "name": "skyblue/100",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "turquoise/100",
+      "value": "#E7FEFE"
+    },
+    {
+      "name": "turquoise/1000",
+      "value": "#045654"
+    },
+    {
+      "name": "turquoise/200",
+      "value": "#D4FBFB"
+    },
+    {
+      "name": "turquoise/300",
+      "value": "#A2F5F5"
+    },
+    {
+      "name": "turquoise/400",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "turquoise/500",
+      "value": "#12B7B7"
+    },
+    {
+      "name": "turquoise/600",
+      "value": "#0FA4A3"
+    },
+    {
+      "name": "turquoise/700",
+      "value": "#0C908F"
+    },
+    {
+      "name": "turquoise/800",
+      "value": "#0A7D7C"
+    },
+    {
+      "name": "turquoise/900",
+      "value": "#076968"
+    },
+    {
+      "name": "white/10%",
+      "value": "#FFFFFF1A"
+    },
+    {
+      "name": "white/100%",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "white/20%",
+      "value": "#FFFFFF33"
+    },
+    {
+      "name": "white/30%",
+      "value": "#FFFFFF4D"
+    },
+    {
+      "name": "white/40%",
+      "value": "#FFFFFF66"
+    },
+    {
+      "name": "white/5%",
+      "value": "#FFFFFF0D"
+    },
+    {
+      "name": "white/50%",
+      "value": "#FFFFFF80"
+    },
+    {
+      "name": "white/60%",
+      "value": "#FFFFFF99"
+    }
   ],
   "floats": [
-    { "name": "effect/1", "value": 4 },
-    { "name": "effect/2", "value": 8 },
-    { "name": "effect/3", "value": 12 },
-    { "name": "effect/4", "value": 16 },
-    { "name": "effect/5", "value": 28 },
-    { "name": "font/lineheight/2xl", "value": 32 },
-    { "name": "font/lineheight/l", "value": 24 },
-    { "name": "font/lineheight/m", "value": 20 },
-    { "name": "font/lineheight/s", "value": 16 },
-    { "name": "font/lineheight/xl", "value": 28 },
-    { "name": "font/lineheight/xs", "value": 12 },
-    { "name": "font/size/2xl", "value": 24 },
-    { "name": "font/size/l", "value": 16 },
-    { "name": "font/size/m", "value": 14 },
-    { "name": "font/size/s", "value": 12 },
-    { "name": "font/size/xl", "value": 20 },
-    { "name": "font/size/xs", "value": 10 },
-    { "name": "iconsize/2xl", "value": 40 },
-    { "name": "iconsize/l", "value": 28 },
-    { "name": "iconsize/m", "value": 24 },
-    { "name": "iconsize/s", "value": 20 },
-    { "name": "iconsize/xl", "value": 32 },
-    { "name": "iconsize/xs", "value": 16 },
-    { "name": "padding/2xl", "value": 28 },
-    { "name": "padding/l", "value": 16 },
-    { "name": "padding/m", "value": 12 },
-    { "name": "padding/none", "value": 0 },
-    { "name": "padding/s", "value": 8 },
-    { "name": "padding/size-3xl", "value": 40 },
-    { "name": "padding/xl", "value": 20 },
-    { "name": "padding/xs", "value": 4 },
-    { "name": "padding/xxs", "value": 2 },
-    { "name": "radius/2xl", "value": 28 },
-    { "name": "radius/3xl", "value": 32 },
-    { "name": "radius/4xl", "value": 40 },
-    { "name": "radius/l", "value": 16 },
-    { "name": "radius/m", "value": 12 },
-    { "name": "radius/round", "value": 999 },
-    { "name": "radius/s", "value": 8 },
-    { "name": "radius/xl", "value": 20 },
-    { "name": "radius/xs", "value": 4 },
-    { "name": "radius/xxs", "value": 2 },
-    { "name": "spacing/2xl", "value": 24 },
-    { "name": "spacing/3xl", "value": 28 },
-    { "name": "spacing/4xl", "value": 32 },
-    { "name": "spacing/5xl", "value": 40 },
-    { "name": "spacing/l", "value": 16 },
-    { "name": "spacing/m", "value": 12 },
-    { "name": "spacing/n", "value": 0 },
-    { "name": "spacing/s", "value": 8 },
-    { "name": "spacing/xl", "value": 20 },
-    { "name": "spacing/xs", "value": 4 },
-    { "name": "spacing/xxs", "value": 2 },
-    { "name": "stroke/l", "value": 2 },
-    { "name": "stroke/m", "value": 1.5 },
-    { "name": "stroke/s", "value": 1 },
-    { "name": "width/2xl", "value": 375 },
-    { "name": "width/3xl", "value": 1280 },
-    { "name": "width/4xl", "value": 1440 },
-    { "name": "width/l", "value": 128 },
-    { "name": "width/m", "value": 100 },
-    { "name": "width/s", "value": 80 },
-    { "name": "width/xl", "value": 319 }
+    {
+      "name": "effect/1",
+      "value": 4
+    },
+    {
+      "name": "effect/2",
+      "value": 8
+    },
+    {
+      "name": "effect/3",
+      "value": 12
+    },
+    {
+      "name": "effect/4",
+      "value": 16
+    },
+    {
+      "name": "effect/5",
+      "value": 28
+    },
+    {
+      "name": "font/lineheight/2xl",
+      "value": 32
+    },
+    {
+      "name": "font/lineheight/l",
+      "value": 24
+    },
+    {
+      "name": "font/lineheight/m",
+      "value": 20
+    },
+    {
+      "name": "font/lineheight/s",
+      "value": 16
+    },
+    {
+      "name": "font/lineheight/xl",
+      "value": 28
+    },
+    {
+      "name": "font/lineheight/xs",
+      "value": 12
+    },
+    {
+      "name": "font/size/2xl",
+      "value": 24
+    },
+    {
+      "name": "font/size/l",
+      "value": 16
+    },
+    {
+      "name": "font/size/m",
+      "value": 14
+    },
+    {
+      "name": "font/size/s",
+      "value": 12
+    },
+    {
+      "name": "font/size/xl",
+      "value": 20
+    },
+    {
+      "name": "font/size/xs",
+      "value": 10
+    },
+    {
+      "name": "iconsize/2xl",
+      "value": 40
+    },
+    {
+      "name": "iconsize/3xl",
+      "value": 80
+    },
+    {
+      "name": "iconsize/l",
+      "value": 28
+    },
+    {
+      "name": "iconsize/m",
+      "value": 24
+    },
+    {
+      "name": "iconsize/s",
+      "value": 20
+    },
+    {
+      "name": "iconsize/xl",
+      "value": 32
+    },
+    {
+      "name": "iconsize/xs",
+      "value": 16
+    },
+    {
+      "name": "padding/2xl",
+      "value": 28
+    },
+    {
+      "name": "padding/l",
+      "value": 16
+    },
+    {
+      "name": "padding/m",
+      "value": 12
+    },
+    {
+      "name": "padding/none",
+      "value": 0
+    },
+    {
+      "name": "padding/s",
+      "value": 8
+    },
+    {
+      "name": "padding/size-3xl",
+      "value": 40
+    },
+    {
+      "name": "padding/xl",
+      "value": 20
+    },
+    {
+      "name": "padding/xs",
+      "value": 4
+    },
+    {
+      "name": "padding/xxs",
+      "value": 2
+    },
+    {
+      "name": "radius/2xl",
+      "value": 28
+    },
+    {
+      "name": "radius/3xl",
+      "value": 32
+    },
+    {
+      "name": "radius/4xl",
+      "value": 40
+    },
+    {
+      "name": "radius/l",
+      "value": 16
+    },
+    {
+      "name": "radius/m",
+      "value": 12
+    },
+    {
+      "name": "radius/n",
+      "value": 0
+    },
+    {
+      "name": "radius/round",
+      "value": 999
+    },
+    {
+      "name": "radius/s",
+      "value": 8
+    },
+    {
+      "name": "radius/xl",
+      "value": 20
+    },
+    {
+      "name": "radius/xs",
+      "value": 4
+    },
+    {
+      "name": "radius/xxs",
+      "value": 2
+    },
+    {
+      "name": "spacing/2xl",
+      "value": 24
+    },
+    {
+      "name": "spacing/3xl",
+      "value": 28
+    },
+    {
+      "name": "spacing/4xl",
+      "value": 32
+    },
+    {
+      "name": "spacing/5xl",
+      "value": 40
+    },
+    {
+      "name": "spacing/l",
+      "value": 16
+    },
+    {
+      "name": "spacing/m",
+      "value": 12
+    },
+    {
+      "name": "spacing/n",
+      "value": 0
+    },
+    {
+      "name": "spacing/s",
+      "value": 8
+    },
+    {
+      "name": "spacing/xl",
+      "value": 20
+    },
+    {
+      "name": "spacing/xs",
+      "value": 4
+    },
+    {
+      "name": "spacing/xxs",
+      "value": 2
+    },
+    {
+      "name": "stroke/l",
+      "value": 2
+    },
+    {
+      "name": "stroke/m",
+      "value": 1.5
+    },
+    {
+      "name": "stroke/s",
+      "value": 1
+    },
+    {
+      "name": "width/2xl",
+      "value": 375
+    },
+    {
+      "name": "width/3xl",
+      "value": 1280
+    },
+    {
+      "name": "width/4xl",
+      "value": 1440
+    },
+    {
+      "name": "width/l",
+      "value": 128
+    },
+    {
+      "name": "width/m",
+      "value": 100
+    },
+    {
+      "name": "width/s",
+      "value": 80
+    },
+    {
+      "name": "width/xl",
+      "value": 319
+    }
   ],
   "strings": [
-    { "name": "font/weight/m", "value": "semibold" },
-    { "name": "font/weight/s", "value": "regular" }
+    {
+      "name": "font/weight/m",
+      "value": "semibold"
+    },
+    {
+      "name": "font/weight/s",
+      "value": "regular"
+    }
   ],
   "lightColors": [
-    { "name": "background/black", "value": "#000000" },
-    { "name": "background/black-secondary", "value": "#00000080" },
-    { "name": "background/brand-primary1", "value": "#141ED2" },
-    { "name": "background/brand-primary2", "value": "#5F7EEB" },
-    { "name": "background/brand-primary3", "value": "#A3B7FD" },
-    { "name": "background/brand-primary4", "value": "#DAE4FF" },
-    { "name": "background/brand-primary5", "value": "#E9EFFF" },
-    { "name": "background/brand-quaternary1", "value": "#6D83A7" },
-    { "name": "background/brand-quaternary2", "value": "#CADBE8" },
-    { "name": "background/brand-quaternary3", "value": "#ECF5FA" },
-    { "name": "background/brand-quaternary4", "value": "#FAFDFF" },
-    { "name": "background/brand-quaternary5", "value": "#9BAFC8" },
-    { "name": "background/brand-secondary1", "value": "#7B5FFF" },
-    { "name": "background/brand-secondary2", "value": "#9781FF" },
-    { "name": "background/brand-secondary3", "value": "#BBADFF" },
-    { "name": "background/brand-secondary4", "value": "#DBD3FF" },
-    { "name": "background/brand-secondary5", "value": "#F2EBFF" },
-    { "name": "background/brand-tertiary1", "value": "#12B7B7" },
-    { "name": "background/brand-tertiary2", "value": "#52DDDD" },
-    { "name": "background/brand-tertiary3", "value": "#A2F5F5" },
-    { "name": "background/brand-tertiary4", "value": "#D4FBFB" },
-    { "name": "background/dark", "value": "#0E16AB" },
-    { "name": "background/disable1", "value": "#CCCCCC" },
-    { "name": "background/disable2", "value": "#D8D8D8" },
-    { "name": "background/disable3", "value": "#F3F3F3" },
-    { "name": "background/error-primary", "value": "#F00000" },
-    { "name": "background/error-secondary", "value": "#F34343" },
-    { "name": "background/error-tertiary", "value": "#FFE3E3" },
-    { "name": "background/gradient1-left", "value": "#141ED2" },
-    { "name": "background/gradient1-right", "value": "#0075FF" },
-    { "name": "background/gradient2-left", "value": "#3949D6" },
-    { "name": "background/gradient2-right", "value": "#2C87F6" },
-    { "name": "background/gradient3-left", "value": "#606AD5" },
-    { "name": "background/gradient3-right", "value": "#569AED" },
-    { "name": "background/gradient4-left", "value": "#606AD5" },
-    { "name": "background/gradient4-right", "value": "#569AED" },
-    { "name": "background/gradient5-left", "value": "#AEB1D4" },
-    { "name": "background/gradient5-right", "value": "#AAC1DD" },
-    { "name": "background/gradient6-left", "value": "#141ED2" },
-    { "name": "background/gradient6-right", "value": "#0075FF" },
-    { "name": "background/gradient8-1", "value": "#FFFFFF" },
-    { "name": "background/gradient8-2", "value": "#F5FFFD" },
-    { "name": "background/gradient8-3", "value": "#DDE7FF" },
-    { "name": "background/gradient8-4", "value": "#DFE3FF" },
-    { "name": "background/opacity1", "value": "#FFFFFF99" },
-    { "name": "background/opacity2", "value": "#FFFFFF80" },
-    { "name": "background/opacity3", "value": "#FFFFFF66" },
-    { "name": "background/opacity4", "value": "#FFFFFF4D" },
-    { "name": "background/opacity5", "value": "#FFFFFF33" },
-    { "name": "background/opacity6", "value": "#FFFFFF1A" },
-    { "name": "background/opacity7", "value": "#FFFFFF0D" },
-    { "name": "background/primary", "value": "#FFFFFF" },
-    { "name": "background/secondary", "value": "#ECF5FA" },
-    { "name": "background/success-primary", "value": "#00AD68" },
-    { "name": "background/success-quaternary", "value": "#E6F6EC" },
-    { "name": "background/success-secondary", "value": "#3DD196" },
-    { "name": "background/success-tertiary", "value": "#85F1C6" },
-    { "name": "background/tertiary", "value": "#005FCB" },
-    { "name": "background/warning-primary", "value": "#FA8A00" },
-    { "name": "background/warning-secondary", "value": "#FDC64E" },
-    { "name": "background/warning-tertiary", "value": "#FFF4D0" },
-    { "name": "blur/1", "value": "#75CEFF" },
-    { "name": "border/brand-primary1", "value": "#141ED2" },
-    { "name": "border/brand-primary2", "value": "#5F7EEB" },
-    { "name": "border/brand-primary3", "value": "#A3B7FD" },
-    { "name": "border/brand-primary4", "value": "#DAE4FF" },
-    { "name": "border/brand-secondary1", "value": "#7B5FFF" },
-    { "name": "border/brand-secondary2", "value": "#9781FF" },
-    { "name": "border/brand-secondary3", "value": "#BBADFF" },
-    { "name": "border/brand-secondary4", "value": "#DBD3FF" },
-    { "name": "border/brand-tertiary", "value": "#52DDDD" },
-    { "name": "border/disable1", "value": "#9B9B9B" },
-    { "name": "border/disable2", "value": "#CCCCCC" },
-    { "name": "border/error1", "value": "#F00000" },
-    { "name": "border/error2", "value": "#F34343" },
-    { "name": "border/error3", "value": "#FB7070" },
-    { "name": "border/primary", "value": "#DAE4FF" },
-    { "name": "border/quaternary", "value": "#CADBE8" },
-    { "name": "border/quaternary2", "value": "#ECF5FA" },
-    { "name": "border/secondary", "value": "#6D83A7" },
-    { "name": "border/success", "value": "#85F1C6" },
-    { "name": "border/tertiary", "value": "#9BAFC8" },
-    { "name": "border/warning", "value": "#FDC64E" },
-    { "name": "chart/1", "value": "#141ED2" },
-    { "name": "chart/10", "value": "#BBADFF" },
-    { "name": "chart/11", "value": "#0A7D7C" },
-    { "name": "chart/12", "value": "#FDC64E" },
-    { "name": "chart/13", "value": "#85F1C6" },
-    { "name": "chart/14", "value": "#9BAFC8" },
-    { "name": "chart/15", "value": "#A3B7FD" },
-    { "name": "chart/16", "value": "#DBD3FF" },
-    { "name": "chart/17", "value": "#BDE8FF" },
-    { "name": "chart/18", "value": "#D4FBFB" },
-    { "name": "chart/19", "value": "#FBDE97" },
-    { "name": "chart/2", "value": "#7B5FFF" },
-    { "name": "chart/20", "value": "#D8D8D8" },
-    { "name": "chart/3", "value": "#52DDDD" },
-    { "name": "chart/4", "value": "#FA8A00" },
-    { "name": "chart/5", "value": "#0075FF" },
-    { "name": "chart/6", "value": "#00AD68" },
-    { "name": "chart/7", "value": "#192D39" },
-    { "name": "chart/8", "value": "#354A5E" },
-    { "name": "chart/9", "value": "#75CEFF" },
-    { "name": "divider/primary", "value": "#DAE4FF" },
-    { "name": "hyperlink/disable", "value": "#9B9B9B" },
-    { "name": "hyperlink/primary", "value": "#141ED2" },
-    { "name": "icon/brand-on-error", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-primary", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-secondary", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-success", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-warning", "value": "#FFFFFF" },
-    { "name": "icon/brand-primary1", "value": "#141ED2" },
-    { "name": "icon/brand-primary2", "value": "#5F7EEB" },
-    { "name": "icon/brand-primary3", "value": "#A3B7FD" },
-    { "name": "icon/brand-primary4", "value": "#DAE4FF" },
-    { "name": "icon/brand-secondary1", "value": "#7B5FFF" },
-    { "name": "icon/brand-secondary2", "value": "#9781FF" },
-    { "name": "icon/brand-secondary3", "value": "#BBADFF" },
-    { "name": "icon/brand-secondary4", "value": "#DBD3FF" },
-    { "name": "icon/disable1", "value": "#808080" },
-    { "name": "icon/disable2", "value": "#9B9B9B" },
-    { "name": "icon/disable3", "value": "#CCCCCC" },
-    { "name": "icon/disable4", "value": "#F3F3F3" },
-    { "name": "icon/error", "value": "#F00000" },
-    { "name": "icon/neutral1", "value": "#192D39" },
-    { "name": "icon/neutral2", "value": "#354A5E" },
-    { "name": "icon/neutral3", "value": "#435870" },
-    { "name": "icon/neutral4", "value": "#6D83A7" },
-    { "name": "icon/neutral5", "value": "#9BAFC8" },
-    { "name": "icon/neutral6", "value": "#ECF5FAB2" },
-    { "name": "icon/success", "value": "#00AD68" },
-    { "name": "icon/warning", "value": "#FA8A00" },
-    { "name": "icon/white", "value": "#FFFFFF" },
-    { "name": "overlay/primary", "value": "#00000080" },
-    { "name": "shadow/1", "value": "#1D5CFB29" },
-    { "name": "shadow/2", "value": "#1D5CFB29" },
-    { "name": "shadow/3", "value": "#1D5CFB29" },
-    { "name": "shadow/4", "value": "#1D5CFB29" },
-    { "name": "shadow/5", "value": "#1D5CFB29" },
-    { "name": "skeleton/primary", "value": "#D8D8D8" },
-    { "name": "skeleton/secondary", "value": "#F3F3F3" },
-    { "name": "text/brand-on-primary", "value": "#FFFFFF" },
-    { "name": "text/brand-on-secondary", "value": "#FFFFFF" },
-    { "name": "text/brand-primary1", "value": "#141ED2" },
-    { "name": "text/brand-primary2", "value": "#5F7EEB" },
-    { "name": "text/brand-primary3", "value": "#A3B7FD" },
-    { "name": "text/brand-primary4", "value": "#DAE4FF" },
-    { "name": "text/brand-secondary1", "value": "#7B5FFF" },
-    { "name": "text/brand-secondary2", "value": "#9781FF" },
-    { "name": "text/brand-secondary3", "value": "#BBADFF" },
-    { "name": "text/brand-secondary4", "value": "#DBD3FF" },
-    { "name": "text/brand-tertiary1", "value": "#12B7B7" },
-    { "name": "text/brand-tertiary2", "value": "#52DDDD" },
-    { "name": "text/disable1", "value": "#808080" },
-    { "name": "text/disable2", "value": "#9B9B9B" },
-    { "name": "text/disable3", "value": "#F3F3F3" },
-    { "name": "text/disable4", "value": "#CCCCCC" },
-    { "name": "text/error", "value": "#F34343" },
-    { "name": "text/on-brand-tertiary", "value": "#192D39" },
-    { "name": "text/on-error", "value": "#FFFFFF" },
-    { "name": "text/on-success", "value": "#FFFFFF" },
-    { "name": "text/on-warning", "value": "#FA8A00" },
-    { "name": "text/primary", "value": "#192D39" },
-    { "name": "text/primary2", "value": "#354A5E" },
-    { "name": "text/primary3", "value": "#435870" },
-    { "name": "text/primary4", "value": "#516682" },
-    { "name": "text/quaternary", "value": "#CADBE8" },
-    { "name": "text/quaternary2", "value": "#ECF5FAB2" },
-    { "name": "text/secondary", "value": "#6D83A7" },
-    { "name": "text/success", "value": "#00AD68" },
-    { "name": "text/tertiary", "value": "#9BAFC8" },
-    { "name": "text/white", "value": "#FFFFFF" }
+    {
+      "name": "background/black",
+      "value": "#000000"
+    },
+    {
+      "name": "background/black-secondary",
+      "value": "#00000080"
+    },
+    {
+      "name": "background/brand-primary1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/brand-primary2",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "background/brand-primary3",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "background/brand-primary4",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "background/brand-primary5",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "background/brand-quaternary1",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "background/brand-quaternary2",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "background/brand-quaternary3",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "background/brand-quaternary4",
+      "value": "#FAFDFF"
+    },
+    {
+      "name": "background/brand-quaternary5",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "background/brand-secondary1",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "background/brand-secondary2",
+      "value": "#9781FF"
+    },
+    {
+      "name": "background/brand-secondary3",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "background/brand-secondary4",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "background/brand-secondary5",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "background/brand-tertiary1",
+      "value": "#12B7B7"
+    },
+    {
+      "name": "background/brand-tertiary2",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "background/brand-tertiary3",
+      "value": "#A2F5F5"
+    },
+    {
+      "name": "background/brand-tertiary4",
+      "value": "#D4FBFB"
+    },
+    {
+      "name": "background/dark",
+      "value": "#0E16AB"
+    },
+    {
+      "name": "background/disable1",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "background/disable2",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "background/disable3",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "background/error-primary",
+      "value": "#F00000"
+    },
+    {
+      "name": "background/error-secondary",
+      "value": "#F34343"
+    },
+    {
+      "name": "background/error-tertiary",
+      "value": "#FFE3E3"
+    },
+    {
+      "name": "background/gradient1-left",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/gradient1-right",
+      "value": "#0075FF"
+    },
+    {
+      "name": "background/gradient2-left",
+      "value": "#3949D6"
+    },
+    {
+      "name": "background/gradient2-right",
+      "value": "#2C87F6"
+    },
+    {
+      "name": "background/gradient3-left",
+      "value": "#606AD5"
+    },
+    {
+      "name": "background/gradient3-right",
+      "value": "#569AED"
+    },
+    {
+      "name": "background/gradient4-left",
+      "value": "#606AD5"
+    },
+    {
+      "name": "background/gradient4-right",
+      "value": "#569AED"
+    },
+    {
+      "name": "background/gradient5-left",
+      "value": "#AEB1D4"
+    },
+    {
+      "name": "background/gradient5-right",
+      "value": "#AAC1DD"
+    },
+    {
+      "name": "background/gradient6-left",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/gradient6-right",
+      "value": "#0075FF"
+    },
+    {
+      "name": "background/gradient8-1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "background/gradient8-2",
+      "value": "#F5FFFD"
+    },
+    {
+      "name": "background/gradient8-3",
+      "value": "#DDE7FF"
+    },
+    {
+      "name": "background/gradient8-4",
+      "value": "#DFE3FF"
+    },
+    {
+      "name": "background/info-primary",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/info-secondary",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "background/info-tertiary",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "background/invalid-primary",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "background/invalid-secondary",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "background/invalid-tertiary",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "background/opacity1",
+      "value": "#FFFFFF99"
+    },
+    {
+      "name": "background/opacity2",
+      "value": "#FFFFFF80"
+    },
+    {
+      "name": "background/opacity3",
+      "value": "#FFFFFF66"
+    },
+    {
+      "name": "background/opacity4",
+      "value": "#FFFFFF4D"
+    },
+    {
+      "name": "background/opacity5",
+      "value": "#FFFFFF33"
+    },
+    {
+      "name": "background/opacity6",
+      "value": "#FFFFFF1A"
+    },
+    {
+      "name": "background/opacity7",
+      "value": "#FFFFFF0D"
+    },
+    {
+      "name": "background/pending-primary",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "background/pending-secondary",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "background/pending-tertiary",
+      "value": "#FAFDFF"
+    },
+    {
+      "name": "background/primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "background/secondary",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "background/success-primary",
+      "value": "#00AD68"
+    },
+    {
+      "name": "background/success-quaternary",
+      "value": "#E6F6EC"
+    },
+    {
+      "name": "background/success-secondary",
+      "value": "#3DD196"
+    },
+    {
+      "name": "background/success-tertiary",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "background/tertiary",
+      "value": "#005FCB"
+    },
+    {
+      "name": "background/warning-primary",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "background/warning-secondary",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "background/warning-tertiary",
+      "value": "#FFF4D0"
+    },
+    {
+      "name": "blur/1",
+      "value": "#75CEFF"
+    },
+    {
+      "name": "border/active",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "border/brand-primary1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "border/brand-primary2",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "border/brand-primary3",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "border/brand-primary4",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "border/brand-secondary1",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "border/brand-secondary2",
+      "value": "#9781FF"
+    },
+    {
+      "name": "border/brand-secondary3",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "border/brand-secondary4",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "border/brand-tertiary",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "border/disable1",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "border/disable2",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "border/error1",
+      "value": "#F00000"
+    },
+    {
+      "name": "border/error2",
+      "value": "#F34343"
+    },
+    {
+      "name": "border/error3",
+      "value": "#FB7070"
+    },
+    {
+      "name": "border/info",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "border/invalid",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "border/pending",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "border/primary",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "border/quaternary",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "border/quaternary2",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "border/secondary",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "border/success",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "border/tertiary",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "border/warning",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "chart/1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "chart/10",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "chart/11",
+      "value": "#0A7D7C"
+    },
+    {
+      "name": "chart/12",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "chart/13",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "chart/14",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "chart/15",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "chart/16",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "chart/17",
+      "value": "#BDE8FF"
+    },
+    {
+      "name": "chart/18",
+      "value": "#D4FBFB"
+    },
+    {
+      "name": "chart/19",
+      "value": "#FBDE97"
+    },
+    {
+      "name": "chart/2",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "chart/20",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "chart/3",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "chart/4",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "chart/5",
+      "value": "#0075FF"
+    },
+    {
+      "name": "chart/6",
+      "value": "#00AD68"
+    },
+    {
+      "name": "chart/7",
+      "value": "#192D39"
+    },
+    {
+      "name": "chart/8",
+      "value": "#354A5E"
+    },
+    {
+      "name": "chart/9",
+      "value": "#75CEFF"
+    },
+    {
+      "name": "divider/primary",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "hyperlink/default",
+      "value": "#141ED2"
+    },
+    {
+      "name": "hyperlink/disabled",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "hyperlink/hover",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "hyperlink/loading",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "hyperlink/pressed",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "icon/brand-on-error",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-info",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-invalid",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-pending",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-secondary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-success",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-warning",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-primary1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "icon/brand-primary2",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "icon/brand-primary3",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "icon/brand-primary4",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "icon/brand-secondary1",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "icon/brand-secondary2",
+      "value": "#9781FF"
+    },
+    {
+      "name": "icon/brand-secondary3",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "icon/brand-secondary4",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "icon/disable1",
+      "value": "#808080"
+    },
+    {
+      "name": "icon/disable2",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "icon/disable3",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "icon/disable4",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "icon/error",
+      "value": "#F00000"
+    },
+    {
+      "name": "icon/info",
+      "value": "#141ED2"
+    },
+    {
+      "name": "icon/invalid",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "icon/neutral1",
+      "value": "#192D39"
+    },
+    {
+      "name": "icon/neutral2",
+      "value": "#354A5E"
+    },
+    {
+      "name": "icon/neutral3",
+      "value": "#435870"
+    },
+    {
+      "name": "icon/neutral4",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "icon/neutral5",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "icon/neutral6",
+      "value": "#ECF5FAB2"
+    },
+    {
+      "name": "icon/pending",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "icon/success",
+      "value": "#00AD68"
+    },
+    {
+      "name": "icon/warning",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "icon/white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "overlay/primary",
+      "value": "#00000080"
+    },
+    {
+      "name": "shadow/1",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "shadow/2",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "shadow/3",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "shadow/4",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "shadow/5",
+      "value": "#1D5CFB29"
+    },
+    {
+      "name": "skeleton/primary",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "skeleton/secondary",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "text/active",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "text/brand-on-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/brand-on-secondary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/brand-primary1",
+      "value": "#141ED2"
+    },
+    {
+      "name": "text/brand-primary2",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "text/brand-primary3",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "text/brand-primary4",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "text/brand-secondary1",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "text/brand-secondary2",
+      "value": "#9781FF"
+    },
+    {
+      "name": "text/brand-secondary3",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "text/brand-secondary4",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "text/brand-tertiary1",
+      "value": "#12B7B7"
+    },
+    {
+      "name": "text/brand-tertiary2",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "text/disable1",
+      "value": "#808080"
+    },
+    {
+      "name": "text/disable2",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "text/disable3",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "text/disable4",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "text/error",
+      "value": "#F34343"
+    },
+    {
+      "name": "text/info",
+      "value": "#141ED2"
+    },
+    {
+      "name": "text/invalid",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "text/on-brand-tertiary",
+      "value": "#192D39"
+    },
+    {
+      "name": "text/on-error",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-info",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-invalid",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-pending",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-success",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-warning",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "text/pending",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "text/primary",
+      "value": "#192D39"
+    },
+    {
+      "name": "text/primary2",
+      "value": "#354A5E"
+    },
+    {
+      "name": "text/primary3",
+      "value": "#435870"
+    },
+    {
+      "name": "text/primary4",
+      "value": "#516682"
+    },
+    {
+      "name": "text/quaternary",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "text/quaternary2",
+      "value": "#ECF5FAB2"
+    },
+    {
+      "name": "text/secondary",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "text/success",
+      "value": "#00AD68"
+    },
+    {
+      "name": "text/tertiary",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "text/white",
+      "value": "#FFFFFF"
+    }
   ],
   "darkColors": [
-    { "name": "background/black", "value": "#000000" },
-    { "name": "background/black-secondary", "value": "#00000080" },
-    { "name": "background/brand-primary1", "value": "#0E16AB" },
-    { "name": "background/brand-primary2", "value": "#121BBB" },
-    { "name": "background/brand-primary3", "value": "#141ED2" },
-    { "name": "background/brand-primary4", "value": "#5F7EEB" },
-    { "name": "background/brand-primary5", "value": "#A3B7FD" },
-    { "name": "background/brand-quaternary1", "value": "#435870" },
-    { "name": "background/brand-quaternary2", "value": "#6D83A7" },
-    { "name": "background/brand-quaternary3", "value": "#9BAFC8" },
-    { "name": "background/brand-quaternary4", "value": "#CADBE8" },
-    { "name": "background/brand-quaternary5", "value": "#516682" },
-    { "name": "background/brand-secondary1", "value": "#5348D3" },
-    { "name": "background/brand-secondary2", "value": "#6150E1" },
-    { "name": "background/brand-secondary3", "value": "#7B5FFF" },
-    { "name": "background/brand-secondary4", "value": "#9781FF" },
-    { "name": "background/brand-secondary5", "value": "#BBADFF" },
-    { "name": "background/brand-tertiary1", "value": "#0C908F" },
-    { "name": "background/brand-tertiary2", "value": "#0FA4A3" },
-    { "name": "background/brand-tertiary3", "value": "#12B7B7" },
-    { "name": "background/brand-tertiary4", "value": "#52DDDD" },
-    { "name": "background/dark", "value": "#050D8C" },
-    { "name": "background/disable1", "value": "#646464" },
-    { "name": "background/disable2", "value": "#646464" },
-    { "name": "background/disable3", "value": "#4D4D4D" },
-    { "name": "background/error-primary", "value": "#BB0403" },
-    { "name": "background/error-secondary", "value": "#D50202" },
-    { "name": "background/error-tertiary", "value": "#F00000" },
-    { "name": "background/gradient1-left", "value": "#141ED2" },
-    { "name": "background/gradient1-right", "value": "#0075FF" },
-    { "name": "background/gradient2-left", "value": "#3949D6" },
-    { "name": "background/gradient2-right", "value": "#2C87F6" },
-    { "name": "background/gradient3-left", "value": "#606AD5" },
-    { "name": "background/gradient3-right", "value": "#569AED" },
-    { "name": "background/gradient4-left", "value": "#606AD5" },
-    { "name": "background/gradient4-right", "value": "#569AED" },
-    { "name": "background/gradient5-left", "value": "#AEB1D4" },
-    { "name": "background/gradient5-right", "value": "#AAC1DD" },
-    { "name": "background/gradient6-left", "value": "#141ED2" },
-    { "name": "background/gradient6-right", "value": "#0075FF" },
-    { "name": "background/gradient8-1", "value": "#FFFFFF" },
-    { "name": "background/gradient8-2", "value": "#F5FFFD" },
-    { "name": "background/gradient8-3", "value": "#DDE7FF" },
-    { "name": "background/gradient8-4", "value": "#DFE3FF" },
-    { "name": "background/opacity1", "value": "#FFFFFF99" },
-    { "name": "background/opacity2", "value": "#FFFFFF80" },
-    { "name": "background/opacity3", "value": "#FFFFFF66" },
-    { "name": "background/opacity4", "value": "#FFFFFF4D" },
-    { "name": "background/opacity5", "value": "#FFFFFF33" },
-    { "name": "background/opacity6", "value": "#FFFFFF1A" },
-    { "name": "background/opacity7", "value": "#FFFFFF0D" },
-    { "name": "background/primary", "value": "#192D39" },
-    { "name": "background/secondary", "value": "#354A5E" },
-    { "name": "background/success-primary", "value": "#008F56" },
-    { "name": "background/success-quaternary", "value": "#85F1C6" },
-    { "name": "background/success-secondary", "value": "#009E5F" },
-    { "name": "background/success-tertiary", "value": "#00AD68" },
-    { "name": "background/tertiary", "value": "#0054B0" },
-    { "name": "background/warning-primary", "value": "#C36A00" },
-    { "name": "background/warning-secondary", "value": "#FA8A00" },
-    { "name": "background/warning-tertiary", "value": "#FDC64E" },
-    { "name": "blur/1", "value": "#435870" },
-    { "name": "border/brand-primary1", "value": "#A3B7FD" },
-    { "name": "border/brand-primary2", "value": "#DAE4FF" },
-    { "name": "border/brand-primary3", "value": "#E9EFFF" },
-    { "name": "border/brand-primary4", "value": "#9BAFC8" },
-    { "name": "border/brand-secondary1", "value": "#BBADFF" },
-    { "name": "border/brand-secondary2", "value": "#DBD3FF" },
-    { "name": "border/brand-secondary3", "value": "#F2EBFF" },
-    { "name": "border/brand-secondary4", "value": "#CADBE8" },
-    { "name": "border/brand-tertiary", "value": "#A2F5F5" },
-    { "name": "border/disable1", "value": "#646464" },
-    { "name": "border/disable2", "value": "#808080" },
-    { "name": "border/error1", "value": "#F34343" },
-    { "name": "border/error2", "value": "#FB7070" },
-    { "name": "border/error3", "value": "#FFB1B1" },
-    { "name": "border/primary", "value": "#435870" },
-    { "name": "border/quaternary", "value": "#354A5E" },
-    { "name": "border/quaternary2", "value": "#273B4B" },
-    { "name": "border/secondary", "value": "#516682" },
-    { "name": "border/success", "value": "#CDFCE9" },
-    { "name": "border/tertiary", "value": "#435870" },
-    { "name": "border/warning", "value": "#FBDE97" },
-    { "name": "chart/1", "value": "#5F7EEB" },
-    { "name": "chart/10", "value": "#DBD3FF" },
-    { "name": "chart/11", "value": "#52DDDD" },
-    { "name": "chart/12", "value": "#FBDE97" },
-    { "name": "chart/13", "value": "#CDFCE9" },
-    { "name": "chart/14", "value": "#ECF5FA" },
-    { "name": "chart/15", "value": "#DAE4FF" },
-    { "name": "chart/16", "value": "#F2EBFF" },
-    { "name": "chart/17", "value": "#DEF5FF" },
-    { "name": "chart/18", "value": "#E7FEFE" },
-    { "name": "chart/19", "value": "#FFF4D0" },
-    { "name": "chart/2", "value": "#9781FF" },
-    { "name": "chart/20", "value": "#9B9B9B" },
-    { "name": "chart/3", "value": "#A2F5F5" },
-    { "name": "chart/4", "value": "#F9A500" },
-    { "name": "chart/5", "value": "#00A5FF" },
-    { "name": "chart/6", "value": "#3DD196" },
-    { "name": "chart/7", "value": "#ECF5FA" },
-    { "name": "chart/8", "value": "#CADBE8" },
-    { "name": "chart/9", "value": "#BDE8FF" },
-    { "name": "divider/primary", "value": "#435870" },
-    { "name": "hyperlink/disable", "value": "#808080" },
-    { "name": "hyperlink/primary", "value": "#A3B7FD" },
-    { "name": "icon/brand-on-error", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-primary", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-secondary", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-success", "value": "#FFFFFF" },
-    { "name": "icon/brand-on-warning", "value": "#FFFFFF" },
-    { "name": "icon/brand-primary1", "value": "#A3B7FD" },
-    { "name": "icon/brand-primary2", "value": "#DAE4FF" },
-    { "name": "icon/brand-primary3", "value": "#E9EFFF" },
-    { "name": "icon/brand-primary4", "value": "#E9EFFF" },
-    { "name": "icon/brand-secondary1", "value": "#BBADFF" },
-    { "name": "icon/brand-secondary2", "value": "#DBD3FF" },
-    { "name": "icon/brand-secondary3", "value": "#F2EBFF" },
-    { "name": "icon/brand-secondary4", "value": "#F2EBFF" },
-    { "name": "icon/disable1", "value": "#9B9B9B" },
-    { "name": "icon/disable2", "value": "#CCCCCC" },
-    { "name": "icon/disable3", "value": "#9B9B9B" },
-    { "name": "icon/disable4", "value": "#808080" },
-    { "name": "icon/error", "value": "#FB7070" },
-    { "name": "icon/neutral1", "value": "#FFFFFF" },
-    { "name": "icon/neutral2", "value": "#ECF5FA" },
-    { "name": "icon/neutral3", "value": "#CADBE8" },
-    { "name": "icon/neutral4", "value": "#9BAFC8" },
-    { "name": "icon/neutral5", "value": "#6D83A7" },
-    { "name": "icon/neutral6", "value": "#516682" },
-    { "name": "icon/success", "value": "#85F1C6" },
-    { "name": "icon/warning", "value": "#FDC64E" },
-    { "name": "icon/white", "value": "#FFFFFF" },
-    { "name": "overlay/primary", "value": "#000000" },
-    { "name": "shadow/1", "value": "#FFFFFF1A" },
-    { "name": "shadow/2", "value": "#FFFFFF1A" },
-    { "name": "shadow/3", "value": "#FFFFFF33" },
-    { "name": "shadow/4", "value": "#FFFFFF33" },
-    { "name": "shadow/5", "value": "#FFFFFF4D" },
-    { "name": "skeleton/primary", "value": "#646464" },
-    { "name": "skeleton/secondary", "value": "#4D4D4D" },
-    { "name": "text/brand-on-primary", "value": "#FFFFFF" },
-    { "name": "text/brand-on-secondary", "value": "#FFFFFF" },
-    { "name": "text/brand-primary1", "value": "#A3B7FD" },
-    { "name": "text/brand-primary2", "value": "#DAE4FF" },
-    { "name": "text/brand-primary3", "value": "#E9EFFF" },
-    { "name": "text/brand-primary4", "value": "#E9EFFF" },
-    { "name": "text/brand-secondary1", "value": "#BBADFF" },
-    { "name": "text/brand-secondary2", "value": "#DBD3FF" },
-    { "name": "text/brand-secondary3", "value": "#F2EBFF" },
-    { "name": "text/brand-secondary4", "value": "#F2EBFF" },
-    { "name": "text/brand-tertiary1", "value": "#A2F5F5" },
-    { "name": "text/brand-tertiary2", "value": "#D4FBFB" },
-    { "name": "text/disable1", "value": "#9B9B9B" },
-    { "name": "text/disable2", "value": "#CCCCCC" },
-    { "name": "text/disable3", "value": "#CCCCCC" },
-    { "name": "text/disable4", "value": "#9B9B9B" },
-    { "name": "text/error", "value": "#FB7070" },
-    { "name": "text/on-brand-tertiary", "value": "#FFFFFF" },
-    { "name": "text/on-error", "value": "#FFFFFF" },
-    { "name": "text/on-success", "value": "#FFFFFF" },
-    { "name": "text/on-warning", "value": "#FFFFFF" },
-    { "name": "text/primary", "value": "#FFFFFF" },
-    { "name": "text/primary2", "value": "#ECF5FA" },
-    { "name": "text/primary3", "value": "#CADBE8" },
-    { "name": "text/primary4", "value": "#6D83A7" },
-    { "name": "text/quaternary", "value": "#516682" },
-    { "name": "text/quaternary2", "value": "#435870" },
-    { "name": "text/secondary", "value": "#9BAFC8" },
-    { "name": "text/success", "value": "#85F1C6" },
-    { "name": "text/tertiary", "value": "#6D83A7" },
-    { "name": "text/white", "value": "#FFFFFF" }
-  ]
+    {
+      "name": "background/black",
+      "value": "#000000"
+    },
+    {
+      "name": "background/black-secondary",
+      "value": "#00000080"
+    },
+    {
+      "name": "background/brand-primary1",
+      "value": "#0E16AB"
+    },
+    {
+      "name": "background/brand-primary2",
+      "value": "#121BBB"
+    },
+    {
+      "name": "background/brand-primary3",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/brand-primary4",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "background/brand-primary5",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "background/brand-quaternary1",
+      "value": "#435870"
+    },
+    {
+      "name": "background/brand-quaternary2",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "background/brand-quaternary3",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "background/brand-quaternary4",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "background/brand-quaternary5",
+      "value": "#516682"
+    },
+    {
+      "name": "background/brand-secondary1",
+      "value": "#5348D3"
+    },
+    {
+      "name": "background/brand-secondary2",
+      "value": "#6150E1"
+    },
+    {
+      "name": "background/brand-secondary3",
+      "value": "#7B5FFF"
+    },
+    {
+      "name": "background/brand-secondary4",
+      "value": "#9781FF"
+    },
+    {
+      "name": "background/brand-secondary5",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "background/brand-tertiary1",
+      "value": "#0C908F"
+    },
+    {
+      "name": "background/brand-tertiary2",
+      "value": "#0FA4A3"
+    },
+    {
+      "name": "background/brand-tertiary3",
+      "value": "#12B7B7"
+    },
+    {
+      "name": "background/brand-tertiary4",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "background/dark",
+      "value": "#050D8C"
+    },
+    {
+      "name": "background/disable1",
+      "value": "#646464"
+    },
+    {
+      "name": "background/disable2",
+      "value": "#646464"
+    },
+    {
+      "name": "background/disable3",
+      "value": "#4D4D4D"
+    },
+    {
+      "name": "background/error-primary",
+      "value": "#BB0403"
+    },
+    {
+      "name": "background/error-secondary",
+      "value": "#D50202"
+    },
+    {
+      "name": "background/error-tertiary",
+      "value": "#F00000"
+    },
+    {
+      "name": "background/gradient1-left",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/gradient1-right",
+      "value": "#0075FF"
+    },
+    {
+      "name": "background/gradient2-left",
+      "value": "#3949D6"
+    },
+    {
+      "name": "background/gradient2-right",
+      "value": "#2C87F6"
+    },
+    {
+      "name": "background/gradient3-left",
+      "value": "#606AD5"
+    },
+    {
+      "name": "background/gradient3-right",
+      "value": "#569AED"
+    },
+    {
+      "name": "background/gradient4-left",
+      "value": "#606AD5"
+    },
+    {
+      "name": "background/gradient4-right",
+      "value": "#569AED"
+    },
+    {
+      "name": "background/gradient5-left",
+      "value": "#AEB1D4"
+    },
+    {
+      "name": "background/gradient5-right",
+      "value": "#AAC1DD"
+    },
+    {
+      "name": "background/gradient6-left",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/gradient6-right",
+      "value": "#0075FF"
+    },
+    {
+      "name": "background/gradient8-1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "background/gradient8-2",
+      "value": "#F5FFFD"
+    },
+    {
+      "name": "background/gradient8-3",
+      "value": "#DDE7FF"
+    },
+    {
+      "name": "background/gradient8-4",
+      "value": "#DFE3FF"
+    },
+    {
+      "name": "background/info-primary",
+      "value": "#141ED2"
+    },
+    {
+      "name": "background/info-secondary",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "background/info-tertiary",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "background/invalid-primary",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "background/invalid-secondary",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "background/invalid-tertiary",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "background/opacity1",
+      "value": "#FFFFFF99"
+    },
+    {
+      "name": "background/opacity2",
+      "value": "#FFFFFF80"
+    },
+    {
+      "name": "background/opacity3",
+      "value": "#FFFFFF66"
+    },
+    {
+      "name": "background/opacity4",
+      "value": "#FFFFFF4D"
+    },
+    {
+      "name": "background/opacity5",
+      "value": "#FFFFFF33"
+    },
+    {
+      "name": "background/opacity6",
+      "value": "#FFFFFF1A"
+    },
+    {
+      "name": "background/opacity7",
+      "value": "#FFFFFF0D"
+    },
+    {
+      "name": "background/pending-primary",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "background/pending-secondary",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "background/pending-tertiary",
+      "value": "#FAFDFF"
+    },
+    {
+      "name": "background/primary",
+      "value": "#192D39"
+    },
+    {
+      "name": "background/secondary",
+      "value": "#354A5E"
+    },
+    {
+      "name": "background/success-primary",
+      "value": "#008F56"
+    },
+    {
+      "name": "background/success-quaternary",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "background/success-secondary",
+      "value": "#009E5F"
+    },
+    {
+      "name": "background/success-tertiary",
+      "value": "#00AD68"
+    },
+    {
+      "name": "background/tertiary",
+      "value": "#0054B0"
+    },
+    {
+      "name": "background/warning-primary",
+      "value": "#C36A00"
+    },
+    {
+      "name": "background/warning-secondary",
+      "value": "#FA8A00"
+    },
+    {
+      "name": "background/warning-tertiary",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "blur/1",
+      "value": "#435870"
+    },
+    {
+      "name": "border/active",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "border/brand-primary1",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "border/brand-primary2",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "border/brand-primary3",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "border/brand-primary4",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "border/brand-secondary1",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "border/brand-secondary2",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "border/brand-secondary3",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "border/brand-secondary4",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "border/brand-tertiary",
+      "value": "#A2F5F5"
+    },
+    {
+      "name": "border/disable1",
+      "value": "#646464"
+    },
+    {
+      "name": "border/disable2",
+      "value": "#808080"
+    },
+    {
+      "name": "border/error1",
+      "value": "#F34343"
+    },
+    {
+      "name": "border/error2",
+      "value": "#FB7070"
+    },
+    {
+      "name": "border/error3",
+      "value": "#FFB1B1"
+    },
+    {
+      "name": "border/info",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "border/invalid",
+      "value": "#D8D8D8"
+    },
+    {
+      "name": "border/pending",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "border/primary",
+      "value": "#435870"
+    },
+    {
+      "name": "border/quaternary",
+      "value": "#354A5E"
+    },
+    {
+      "name": "border/quaternary2",
+      "value": "#273B4B"
+    },
+    {
+      "name": "border/secondary",
+      "value": "#516682"
+    },
+    {
+      "name": "border/success",
+      "value": "#CDFCE9"
+    },
+    {
+      "name": "border/tertiary",
+      "value": "#435870"
+    },
+    {
+      "name": "border/warning",
+      "value": "#FBDE97"
+    },
+    {
+      "name": "chart/1",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "chart/10",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "chart/11",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "chart/12",
+      "value": "#FBDE97"
+    },
+    {
+      "name": "chart/13",
+      "value": "#CDFCE9"
+    },
+    {
+      "name": "chart/14",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "chart/15",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "chart/16",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "chart/17",
+      "value": "#DEF5FF"
+    },
+    {
+      "name": "chart/18",
+      "value": "#E7FEFE"
+    },
+    {
+      "name": "chart/19",
+      "value": "#FFF4D0"
+    },
+    {
+      "name": "chart/2",
+      "value": "#9781FF"
+    },
+    {
+      "name": "chart/20",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "chart/3",
+      "value": "#A2F5F5"
+    },
+    {
+      "name": "chart/4",
+      "value": "#F9A500"
+    },
+    {
+      "name": "chart/5",
+      "value": "#00A5FF"
+    },
+    {
+      "name": "chart/6",
+      "value": "#3DD196"
+    },
+    {
+      "name": "chart/7",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "chart/8",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "chart/9",
+      "value": "#BDE8FF"
+    },
+    {
+      "name": "divider/primary",
+      "value": "#435870"
+    },
+    {
+      "name": "hyperlink/default",
+      "value": "#141ED2"
+    },
+    {
+      "name": "hyperlink/disabled",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "hyperlink/hover",
+      "value": "#5F7EEB"
+    },
+    {
+      "name": "hyperlink/loading",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "hyperlink/pressed",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "icon/brand-on-error",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-info",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-invalid",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-pending",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-secondary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-success",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-on-warning",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/brand-primary1",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "icon/brand-primary2",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "icon/brand-primary3",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "icon/brand-primary4",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "icon/brand-secondary1",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "icon/brand-secondary2",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "icon/brand-secondary3",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "icon/brand-secondary4",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "icon/disable1",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "icon/disable2",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "icon/disable3",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "icon/disable4",
+      "value": "#808080"
+    },
+    {
+      "name": "icon/error",
+      "value": "#FB7070"
+    },
+    {
+      "name": "icon/info",
+      "value": "#141ED2"
+    },
+    {
+      "name": "icon/invalid",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "icon/neutral1",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon/neutral2",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "icon/neutral3",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "icon/neutral4",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "icon/neutral5",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "icon/neutral6",
+      "value": "#516682"
+    },
+    {
+      "name": "icon/pending",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "icon/success",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "icon/warning",
+      "value": "#FDC64E"
+    },
+    {
+      "name": "icon/white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "overlay/primary",
+      "value": "#000000"
+    },
+    {
+      "name": "shadow/1",
+      "value": "#FFFFFF1A"
+    },
+    {
+      "name": "shadow/2",
+      "value": "#FFFFFF1A"
+    },
+    {
+      "name": "shadow/3",
+      "value": "#FFFFFF33"
+    },
+    {
+      "name": "shadow/4",
+      "value": "#FFFFFF33"
+    },
+    {
+      "name": "shadow/5",
+      "value": "#FFFFFF4D"
+    },
+    {
+      "name": "skeleton/primary",
+      "value": "#646464"
+    },
+    {
+      "name": "skeleton/secondary",
+      "value": "#4D4D4D"
+    },
+    {
+      "name": "text/active",
+      "value": "#52DDDD"
+    },
+    {
+      "name": "text/brand-on-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/brand-on-secondary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/brand-primary1",
+      "value": "#A3B7FD"
+    },
+    {
+      "name": "text/brand-primary2",
+      "value": "#DAE4FF"
+    },
+    {
+      "name": "text/brand-primary3",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "text/brand-primary4",
+      "value": "#E9EFFF"
+    },
+    {
+      "name": "text/brand-secondary1",
+      "value": "#BBADFF"
+    },
+    {
+      "name": "text/brand-secondary2",
+      "value": "#DBD3FF"
+    },
+    {
+      "name": "text/brand-secondary3",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "text/brand-secondary4",
+      "value": "#F2EBFF"
+    },
+    {
+      "name": "text/brand-tertiary1",
+      "value": "#A2F5F5"
+    },
+    {
+      "name": "text/brand-tertiary2",
+      "value": "#D4FBFB"
+    },
+    {
+      "name": "text/disable1",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "text/disable2",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "text/disable3",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "text/disable4",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "text/error",
+      "value": "#FB7070"
+    },
+    {
+      "name": "text/info",
+      "value": "#141ED2"
+    },
+    {
+      "name": "text/invalid",
+      "value": "#CCCCCC"
+    },
+    {
+      "name": "text/on-brand-tertiary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-error",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-info",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-invalid",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-pending",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-success",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/on-warning",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/pending",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "text/primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text/primary2",
+      "value": "#ECF5FA"
+    },
+    {
+      "name": "text/primary3",
+      "value": "#CADBE8"
+    },
+    {
+      "name": "text/primary4",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "text/quaternary",
+      "value": "#516682"
+    },
+    {
+      "name": "text/quaternary2",
+      "value": "#435870"
+    },
+    {
+      "name": "text/secondary",
+      "value": "#9BAFC8"
+    },
+    {
+      "name": "text/success",
+      "value": "#85F1C6"
+    },
+    {
+      "name": "text/tertiary",
+      "value": "#6D83A7"
+    },
+    {
+      "name": "text/white",
+      "value": "#FFFFFF"
+    }
+  ],
+  "brandModes": {
+    "Default": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#141ED2"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#5F7EEB"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#DAE4FF"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#E9EFFF"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#ECF5FA"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#7B5FFF"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#9781FF"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#BBADFF"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#DBD3FF"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#F2EBFF"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#141ED2"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#0075FF"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#3949D6"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#2C87F6"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#606AD5"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#569AED"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#606AD5"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#569AED"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#AEB1D4"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#AAC1DD"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#141ED2"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#0075FF"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#F5FFFD"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#DDE7FF"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#DFE3FF"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#141ED2"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#5F7EEB"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#DAE4FF"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#7B5FFF"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#9781FF"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#BBADFF"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#DBD3FF"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#141ED2"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#5F7EEB"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#141ED2"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#5F7EEB"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#DAE4FF"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#7B5FFF"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#9781FF"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#BBADFF"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#DBD3FF"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#141ED2"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#5F7EEB"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#DAE4FF"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#7B5FFF"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#9781FF"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#BBADFF"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#DBD3FF"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ],
+    "Silver": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#313A3E"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#5A6165"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#757B7E"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#EAEBEC"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#BFC2C3"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#EAEBEC"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#313A3E"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#5A6165"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#757B7E"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#A0A4A6"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#313A3E"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#757B7E"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#495255"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#83888B"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#666D70"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#959A9C"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#666D70"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#959A9C"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#AFB3B5"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#C3C5C7"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#313A3E"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#757B7E"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#FAFBFB"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#E3E4E5"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#E4E5E6"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#313A3E"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#5A6165"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#A0A4A6"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#313A3E"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#5A6165"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#757B7E"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#313A3E"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#5A6165"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#757B7E"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#5A6165"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#757B7E"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#A0A4A6"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#313A3E"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#5A6165"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#757B7E"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#5A6165"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#757B7E"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#A0A4A6"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#2D3538"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#313A3E"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#5A6165"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#757B7E"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ],
+    "Gold": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#FEE5BA"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#FFF7E9"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#FFF7E9"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#B27A17"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#FDD998"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#CD880D"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#FBBA45"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#D59944"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#FCC260"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#DDAB69"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#FDCC7D"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#DDAB69"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#FDCC7D"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#EFD5B5"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#FEE3B9"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#CD880D"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#FBBA45"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#FEFDFA"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#F9F0E5"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#FFF3E1"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#8A5F12"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#B27A17"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#FDD998"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#B27A17"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#B27A17"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#8A5F12"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#FDD998"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#B27A17"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#8A5F12"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#FDD998"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#B27A17"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#FBAC20"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#FCBD4D"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#FCC76A"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ],
+    "Diamond": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#1060BB"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#4080C9"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#E7EFF8"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#B5CEEA"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#E7EFF8"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#0F57AA"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#1060BB"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#4080C9"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#91B6E0"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#064C9C"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#5F9DE4"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#3065AB"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#71A8E8"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#547FBB"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#87B6EC"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#547FBB"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#87B6EC"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#A7BEDE"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#BCD6F5"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#064C9C"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#5F9DE4"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#FAFBFE"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#E0E8F4"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#E1EDFB"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#1060BB"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#4080C9"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#4080C9"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#91B6E0"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#0F57AA"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#1060BB"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#4080C9"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#1060BB"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#4080C9"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#093567"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#4080C9"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#91B6E0"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#0F57AA"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#1060BB"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#4080C9"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#093567"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#4080C9"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#91B6E0"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#0F57AA"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#1060BB"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#4080C9"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#5F94D1"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ],
+    "Platinum": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#FCF0FF"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#F6D2FF"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#FCF0FF"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#A14DB4"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#F2BCFF"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#A013C0"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#E264FE"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#AE46CA"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#E678FF"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#BE6AD5"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#EB90FF"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#BE6AD5"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#EB90FF"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#DFB5EC"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#F6C3FF"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#A013C0"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#E264FE"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#FEFBFF"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#F4E5F9"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#FBE5FF"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#A3B7FD"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#F2BCFF"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#A14DB4"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#A14DB4"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#7D3C8C"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#F2BCFF"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#A14DB4"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#7D3C8C"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#F2BCFF"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#A14DB4"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#E36DFE"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#E98AFE"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#EC9DFE"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ],
+    "Premium": [
+      {
+        "name": "background/brand-primary1",
+        "value": "#977545"
+      },
+      {
+        "name": "background/brand-primary2",
+        "value": "#AC916A"
+      },
+      {
+        "name": "background/brand-primary3",
+        "value": "#B9A382"
+      },
+      {
+        "name": "background/brand-primary4",
+        "value": "#F5F1EC"
+      },
+      {
+        "name": "background/brand-primary5",
+        "value": "#DFD4C5"
+      },
+      {
+        "name": "background/brand-quaternary1",
+        "value": "#6D83A7"
+      },
+      {
+        "name": "background/brand-quaternary2",
+        "value": "#CADBE8"
+      },
+      {
+        "name": "background/brand-quaternary3",
+        "value": "#F5F1EC"
+      },
+      {
+        "name": "background/brand-quaternary4",
+        "value": "#FAFDFF"
+      },
+      {
+        "name": "background/brand-quaternary5",
+        "value": "#9BAFC8"
+      },
+      {
+        "name": "background/brand-secondary1",
+        "value": "#6B5331"
+      },
+      {
+        "name": "background/brand-secondary2",
+        "value": "#977545"
+      },
+      {
+        "name": "background/brand-secondary3",
+        "value": "#AC916A"
+      },
+      {
+        "name": "background/brand-secondary4",
+        "value": "#B9A382"
+      },
+      {
+        "name": "background/brand-secondary5",
+        "value": "#CFC0A9"
+      },
+      {
+        "name": "background/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "background/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "background/brand-tertiary3",
+        "value": "#A2F5F5"
+      },
+      {
+        "name": "background/brand-tertiary4",
+        "value": "#D4FBFB"
+      },
+      {
+        "name": "background/gradient1-left",
+        "value": "#7A5420"
+      },
+      {
+        "name": "background/gradient1-right",
+        "value": "#AC916A"
+      },
+      {
+        "name": "background/gradient2-left",
+        "value": "#8C6A40"
+      },
+      {
+        "name": "background/gradient2-right",
+        "value": "#B59C7A"
+      },
+      {
+        "name": "background/gradient3-left",
+        "value": "#9F8360"
+      },
+      {
+        "name": "background/gradient3-right",
+        "value": "#C0AB8E"
+      },
+      {
+        "name": "background/gradient4-left",
+        "value": "#9F8360"
+      },
+      {
+        "name": "background/gradient4-right",
+        "value": "#C0AB8E"
+      },
+      {
+        "name": "background/gradient5-left",
+        "value": "#CEBFAD"
+      },
+      {
+        "name": "background/gradient5-right",
+        "value": "#DCD0BF"
+      },
+      {
+        "name": "background/gradient6-left",
+        "value": "#7A5420"
+      },
+      {
+        "name": "background/gradient6-right",
+        "value": "#AC916A"
+      },
+      {
+        "name": "background/gradient8-1",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "background/gradient8-2",
+        "value": "#FCFBFA"
+      },
+      {
+        "name": "background/gradient8-3",
+        "value": "#EEE8E2"
+      },
+      {
+        "name": "background/gradient8-4",
+        "value": "#EFEAE3"
+      },
+      {
+        "name": "border/brand-primary1",
+        "value": "#977545"
+      },
+      {
+        "name": "border/brand-primary2",
+        "value": "#AC916A"
+      },
+      {
+        "name": "border/brand-primary3",
+        "value": "#B9A382"
+      },
+      {
+        "name": "border/brand-primary4",
+        "value": "#CFC0A9"
+      },
+      {
+        "name": "border/brand-secondary1",
+        "value": "#6B5331"
+      },
+      {
+        "name": "border/brand-secondary2",
+        "value": "#977545"
+      },
+      {
+        "name": "border/brand-secondary3",
+        "value": "#AC916A"
+      },
+      {
+        "name": "border/brand-secondary4",
+        "value": "#B9A382"
+      },
+      {
+        "name": "border/brand-tertiary",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "hyperlink/default",
+        "value": "#6B5331"
+      },
+      {
+        "name": "hyperlink/disabled",
+        "value": "#9B9B9B"
+      },
+      {
+        "name": "hyperlink/hover",
+        "value": "#AC916A"
+      },
+      {
+        "name": "hyperlink/loading",
+        "value": "#CCCCCC"
+      },
+      {
+        "name": "hyperlink/pressed",
+        "value": "#B9A382"
+      },
+      {
+        "name": "icon/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "icon/brand-primary1",
+        "value": "#534026"
+      },
+      {
+        "name": "icon/brand-primary2",
+        "value": "#AC916A"
+      },
+      {
+        "name": "icon/brand-primary3",
+        "value": "#B9A382"
+      },
+      {
+        "name": "icon/brand-primary4",
+        "value": "#CFC0A9"
+      },
+      {
+        "name": "icon/brand-secondary1",
+        "value": "#6B5331"
+      },
+      {
+        "name": "icon/brand-secondary2",
+        "value": "#977545"
+      },
+      {
+        "name": "icon/brand-secondary3",
+        "value": "#AC916A"
+      },
+      {
+        "name": "icon/brand-secondary4",
+        "value": "#B9A382"
+      },
+      {
+        "name": "text/brand-on-primary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-on-secondary",
+        "value": "#FFFFFF"
+      },
+      {
+        "name": "text/brand-primary1",
+        "value": "#534026"
+      },
+      {
+        "name": "text/brand-primary2",
+        "value": "#AC916A"
+      },
+      {
+        "name": "text/brand-primary3",
+        "value": "#B9A382"
+      },
+      {
+        "name": "text/brand-primary4",
+        "value": "#CFC0A9"
+      },
+      {
+        "name": "text/brand-secondary1",
+        "value": "#6B5331"
+      },
+      {
+        "name": "text/brand-secondary2",
+        "value": "#977545"
+      },
+      {
+        "name": "text/brand-secondary3",
+        "value": "#AC916A"
+      },
+      {
+        "name": "text/brand-secondary4",
+        "value": "#B9A382"
+      },
+      {
+        "name": "text/brand-tertiary1",
+        "value": "#12B7B7"
+      },
+      {
+        "name": "text/brand-tertiary2",
+        "value": "#52DDDD"
+      },
+      {
+        "name": "text/on-brand-tertiary",
+        "value": "#192D39"
+      }
+    ]
+  }
 }

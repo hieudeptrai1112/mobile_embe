@@ -24,6 +24,7 @@ abstract final class AppFont {
 
 abstract final class AppIconSize {
   static const n2xl = 40.0;
+  static const n3xl = 80.0;
   static const l = 28.0;
   static const m = 24.0;
   static const s = 20.0;
@@ -49,6 +50,7 @@ abstract final class AppRadius {
   static const n4xl = 40.0;
   static const l = 16.0;
   static const m = 12.0;
+  static const n = 0.0;
   static const round = 999.0;
   static const s = 8.0;
   static const xl = 20.0;

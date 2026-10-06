@@ -107,8 +107,11 @@ List<SemanticColorGroup> semanticColorGroups(SemanticColors c) {
         (name: 'textBrandSecondary4', color: c.textBrandSecondary4),
         (name: 'textBrandTertiary1', color: c.textBrandTertiary1),
         (name: 'textBrandTertiary2', color: c.textBrandTertiary2),
-        (name: 'hyperlinkPrimary', color: c.hyperlinkPrimary),
-        (name: 'hyperlinkDisable', color: c.hyperlinkDisable),
+        (name: 'hyperlinkDefault', color: c.hyperlinkDefault),
+        (name: 'hyperlinkHover', color: c.hyperlinkHover),
+        (name: 'hyperlinkPressed', color: c.hyperlinkPressed),
+        (name: 'hyperlinkLoading', color: c.hyperlinkLoading),
+        (name: 'hyperlinkDisabled', color: c.hyperlinkDisabled),
       ],
     ),
     SemanticColorGroup(
