@@ -1054,6 +1054,118 @@
     {
       "name": "white/60%",
       "value": "#FFFFFF99"
+    },
+    {
+      "name": "spacing/0",
+      "value": 0
+    },
+    {
+      "name": "spacing/1",
+      "value": 1
+    },
+    {
+      "name": "spacing/10",
+      "value": 10
+    },
+    {
+      "name": "spacing/100",
+      "value": 100
+    },
+    {
+      "name": "spacing/12",
+      "value": 12
+    },
+    {
+      "name": "spacing/128",
+      "value": 128
+    },
+    {
+      "name": "spacing/1280",
+      "value": 1280
+    },
+    {
+      "name": "spacing/14",
+      "value": 14
+    },
+    {
+      "name": "spacing/1440",
+      "value": 1440
+    },
+    {
+      "name": "spacing/16",
+      "value": 16
+    },
+    {
+      "name": "spacing/1_5",
+      "value": 1.5
+    },
+    {
+      "name": "spacing/2",
+      "value": 2
+    },
+    {
+      "name": "spacing/20",
+      "value": 20
+    },
+    {
+      "name": "spacing/24",
+      "value": 24
+    },
+    {
+      "name": "spacing/28",
+      "value": 28
+    },
+    {
+      "name": "spacing/319",
+      "value": 319
+    },
+    {
+      "name": "spacing/32",
+      "value": 32
+    },
+    {
+      "name": "spacing/375",
+      "value": 375
+    },
+    {
+      "name": "spacing/4",
+      "value": 4
+    },
+    {
+      "name": "spacing/40",
+      "value": 40
+    },
+    {
+      "name": "spacing/52",
+      "value": 52
+    },
+    {
+      "name": "spacing/8",
+      "value": 8
+    },
+    {
+      "name": "spacing/80",
+      "value": 80
+    },
+    {
+      "name": "spacing/999",
+      "value": 999
+    },
+    {
+      "name": "typography/font-body-display",
+      "value": "Averta Std CY"
+    },
+    {
+      "name": "typography/font-family-display",
+      "value": "Averta Std CY"
+    },
+    {
+      "name": "typography/font-weight-regular",
+      "value": "regular"
+    },
+    {
+      "name": "typography/font-weight-semibold",
+      "value": "semibold"
     }
   ],
   "floats": [

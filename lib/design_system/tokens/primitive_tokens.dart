@@ -263,7 +263,35 @@ abstract final class PrimitiveColors {
 }
 
 abstract final class PrimitiveSpacing {
+  static const n0 = 0.0;
+  static const n1 = 1.0;
+  static const n10 = 10.0;
+  static const n100 = 100.0;
+  static const n12 = 12.0;
+  static const n128 = 128.0;
+  static const n1280 = 1280.0;
+  static const n14 = 14.0;
+  static const n1440 = 1440.0;
+  static const n16 = 16.0;
+  static const n15 = 1.5;
+  static const n2 = 2.0;
+  static const n20 = 20.0;
+  static const n24 = 24.0;
+  static const n28 = 28.0;
+  static const n319 = 319.0;
+  static const n32 = 32.0;
+  static const n375 = 375.0;
+  static const n4 = 4.0;
+  static const n40 = 40.0;
+  static const n52 = 52.0;
+  static const n8 = 8.0;
+  static const n80 = 80.0;
+  static const n999 = 999.0;
 }
 
 abstract final class PrimitiveTypography {
+  static const fontBodyDisplay = 'Averta Std CY';
+  static const fontFamilyDisplay = 'Averta Std CY';
+  static const fontWeightRegular = 'regular';
+  static const fontWeightSemibold = 'semibold';
 }
